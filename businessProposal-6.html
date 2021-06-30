@@ -268,17 +268,24 @@
     $('.hide').hide();
     $('.show').show();
 
-    $('.govuk-button').click(function () {
+    $('input[type="checkbox"]#complete').click(function(){
+        if($(this).prop("checked") == true){
+            console.log("Checkbox is checked.");
 
-        if (!$(".govuk-textarea").val()) {
-            $('.hide').show();
-            $('.show').remove();
-            $(window).scrollTop(0);
-            return false;
+            if (!$(".govuk-textarea").val()) {
+                $('style').remove();
+                $('.hide').show();
+                $('.show').remove();
+                $(window).scrollTop(0);
+                return false;
+            }
         }
-
-      });
+        else if($(this).prop("checked") == false){
+          console.log("Checkbox is unchecked.");
+        }
     });
+
+});
 
 </script>
 
