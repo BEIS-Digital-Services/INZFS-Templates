@@ -195,11 +195,10 @@
 
 
 
-      <a href="applicationComplete.html">
+
         <button class="govuk-button" data-module="govuk-button">
           Submit application
         </button>
-      </a>
       
     </div>
 
@@ -262,5 +261,33 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+
+
+    $('.govuk-button').click(function (e) {
+
+if ($('#complete').prop("checked") == true) {
+  window.location.href = 'applicationComplete.html';
+}
+else if ($('#complete').prop("checked") == false) {
+  window.location.href = 'applicationSubmit.html';
+}
+
+});
+
+
+
+});
+
+</script>
+
+
+
   </body>
 </html>
