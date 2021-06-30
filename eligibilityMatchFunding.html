@@ -35,7 +35,7 @@
 
 <!-- start header component -->
 <header class="govuk-header " role="banner" data-module="govuk-header">
-  <div id="2" class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="#" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
@@ -65,57 +65,120 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-  
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
-    </div>
-    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
-        <p ><a class="govuk-body-m govuk-link" href="landing.html">Sign out</a></p>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters"> 
+    <div class="govuk-breadcrumbs govuk-signout-right">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="applicationOverview.html">Application overview</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+        1. Eligibility and match funding
+        </li>
+      </ol>
     </div>
   </div>
+  <div class="govuk-grid-column-one-quarter govuk-signout-right">  
+      <p ><a class="govuk-body-m govuk-link" href="landing.html">Sign out</a></p>
+  </div>
+</div>
+
+
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-
-      <h1 class="govuk-heading-l">Submit application</h1>
-      
+      <h1 class="govuk-heading-l">1. Eligibility and match funding</h1>
     </div>
   </div>
   
-    
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h2 class="govuk-heading-m">Now send your application</h2>
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          1. Eligibility and match funding
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#write-application">
+              Write application
+            </a>
+          </li>
+        </ul>
 
-      <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="write-application">
 
-      <p class="govuk-body">Before you submit your application you may wish to <a class="govuk-link" href="#">download a PDF copy of your answers.</a></p>
+          <p class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-0">1. Eligibility<span class="summary-list-section summary-list-section--right">0 out of 2 completed</span></p>
+          <hr class="govuk-section-break govuk-!-padding-bottom-3 govuk-section-break--visible">
 
-      <div class="govuk-button-group">
+          <dl class="govuk-summary-list">
+            <div class="govuk-body-m govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                <a class="govuk-link govuk-!-font-weight-regular" href="eligibilityMatchFunding-1.html">
+                  1.1. Confirm eligibility<span class="govuk-visually-hidden">Confirm eligibility</span>
+                </a>
+              </dt>
+              <dd class="govuk-summary-list__actions">
+              Not started
+              </dd>
+            </div>
+            <div class="govuk-body-m govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                <a class="govuk-link govuk-!-font-weight-regular" href="eligibilityMatchFunding-2.html">
+                  1.2. Funding Levels and Subsidy Requirements<span class="govuk-visually-hidden">Funding Levels and Subsidy Requirements</span>
+                </a>
+              </dt>
+              <dd class="govuk-summary-list__actions">
+                Not started
+              </dd>
+            </div>
 
-        <a href="applicationComplete.html">
-          <button class="govuk-button" data-module="govuk-button">
-            Accept and send application
-          </button>
-        </a>
+          </dl>
 
-        <a href="applicationOverview.html">
-          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Go back to application
-          </button>
-        </a>
+      
+        </div>
+
 
       </div>
 
+      <a href="applicationOverview.html">
+        <button class="govuk-button" data-module="govuk-button">
+          Back to application overview
+        </button>
+      </a>
+      
     </div>
 
+    <div class="govuk-grid-column-one-third govuk-!-padding-top-9">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary">
+
+          <p class="govuk-body-m govuk-colour--mid-grey govuk-!-margin-bottom-0">Deadline</p>
+          <p class="govuk-body-m govuk-!-margin-bottom-10">25 March at 11.59pm</p>
+
+          <p class="govuk-body-m govuk-colour--mid-grey govuk-!-margin-bottom-0">Application</p>
+          <p class="govuk-body-m govuk-!-margin-bottom-10">EEF18453SA</p>
+
+      </aside>
+
+      <aside class="app-related-items" role="complementary">
+
+        <p class="govuk-body-m govuk-colour--mid-grey">Downloads</p>
+        <p class="govuk-body-m govuk-!-margin-bottom-3"><a class="govuk-link" href="#">Download the guidance</a></p>
+        <p class="govuk-body-m"><a class="govuk-link" href="#">Download supporting documents</a></p>
+
+    </aside>
+
+    </div>
   </div>
   </main>
+
 </div>
 <!-- end main content component -->
 

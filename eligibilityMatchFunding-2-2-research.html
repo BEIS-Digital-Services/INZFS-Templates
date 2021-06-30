@@ -35,7 +35,7 @@
 
 <!-- start header component -->
 <header class="govuk-header " role="banner" data-module="govuk-header">
-  <div id="2" class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="#" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
@@ -65,57 +65,40 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-  
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
+      <a href="eligibilityMatchFunding.html" class="govuk-back-link">Back to eligibity and match funding overview</a>
     </div>
-    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
-        <p ><a class="govuk-body-m govuk-link" href="landing.html">Sign out</a></p>
-    </div>
+    <div class="govuk-grid-column-one-quarter"> </div>
   </div>
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Submit application</h1>
-      
-    </div>
-  </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+          <h1 class="govuk-heading-l">Dead end - need more info</h1>
+
+          <p class="govuk-body">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+
+          <a href="eligibilityMatchFunding.html">
+            <button class="govuk-button" data-module="govuk-button">
+                Save and return to Eligibility and match funding
+            </button>
+          </a>
+
   
-    
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-
-      <h2 class="govuk-heading-m">Now send your application</h2>
-
-      <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-      <p class="govuk-body">Before you submit your application you may wish to <a class="govuk-link" href="#">download a PDF copy of your answers.</a></p>
-
-      <div class="govuk-button-group">
-
-        <a href="applicationComplete.html">
-          <button class="govuk-button" data-module="govuk-button">
-            Accept and send application
-          </button>
-        </a>
-
-        <a href="applicationOverview.html">
-          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Go back to application
-          </button>
-        </a>
-
       </div>
 
-    </div>
 
-  </div>
+
+
+    </div>
   </main>
+
+
 </div>
 <!-- end main content component -->
 
@@ -147,5 +130,27 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+  $( document ).ready(function() {
+
+
+    $('input[type="radio"]#eligible-fund-2').click(function(){
+        if($(this).prop("checked") == true){
+            window.location.href = 'eligibilityMatchFunding-no.html';
+        }
+        else if($(this).prop("checked") == false){
+          window.location.href = '#';
+        }
+    });
+
+});
+
+
+</script>
+
   </body>
 </html>

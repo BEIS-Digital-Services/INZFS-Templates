@@ -35,7 +35,7 @@
 
 <!-- start header component -->
 <header class="govuk-header " role="banner" data-module="govuk-header">
-  <div id="2" class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="#" class="govuk-header__link govuk-header__link--homepage">
         <span class="govuk-header__logotype">
@@ -65,57 +65,72 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-  
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
+      <a href="eligibilityMatchFunding.html" class="govuk-back-link">Back to eligibity and match funding overview</a>
     </div>
-    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
-        <p ><a class="govuk-body-m govuk-link" href="landing.html">Sign out</a></p>
-    </div>
+    <div class="govuk-grid-column-one-quarter"> </div>
   </div>
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l">Submit application</h1>
-      
-    </div>
-  </div>
-  
-    
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-      <h2 class="govuk-heading-m">Now send your application</h2>
 
-      <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+       <form action="eligibilityMatchFunding-2-2-mediumLarge.html" method="post" novalidate> 
+                
+         
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="not-active-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    Has your organisation not taken over the activity of another company, not yet have distributed profits and have not been formed through a merger?
+                  </h1>
+                </legend>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="not-active" name="not-active" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="not-active">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="not-active-2" name="not-active" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="not-active-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+            
+              </fieldset>
+            </div>
 
-      <p class="govuk-body">Before you submit your application you may wish to <a class="govuk-link" href="#">download a PDF copy of your answers.</a></p>
 
-      <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
 
-        <a href="applicationComplete.html">
-          <button class="govuk-button" data-module="govuk-button">
-            Accept and send application
-          </button>
-        </a>
 
-        <a href="applicationOverview.html">
-          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Go back to application
-          </button>
-        </a>
-
+        </form> 
       </div>
 
-    </div>
 
-  </div>
+
+      <div class="govuk-grid-column-one-third">
+
+  
+      </div>
+
+
+
+
+    </div>
   </main>
+
+
 </div>
 <!-- end main content component -->
 
@@ -147,5 +162,6 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
   </body>
 </html>
