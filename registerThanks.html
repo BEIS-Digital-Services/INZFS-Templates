@@ -66,45 +66,40 @@
 <div class="govuk-width-container">
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">
-      <a href="#" onclick="history.back(-1)" class="govuk-back-link">Back</a>
+    <div class="govuk-grid-column-three-quarters"> 
+      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
     </div>
-    <div class="govuk-grid-column-one-quarter"></div>
+    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
+    </div>
   </div>
-
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Thank you for registering</h1>
+
+    </div>
+  </div>
     
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Verify your email address</h1>
-      <p class="govuk-body-l">You’ll need to verify your email address to continue.<br /> We have sent a verification code to your email.</p>
+      <p class="govuk-body-l govuk-!-font-weight-bold">Applications open on the 29 September 2021 at 11.59pm</p>
+      <p class="govuk-body">Please refer to the <a class="govuk-link" href="#">detailed guidance</a> before starting your application. You can also <a class="govuk-link" href="#">review the application questions.</a>  </p>
+      <p class="govuk-body">Please be aware that: </p>
 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>funding will not be available for any activities related to your project beyond March 2024</li>
+        <li>you can only apply for funding to cover project-related activities taking place from the grant’s start date. Funding can not be backdated to include any previous activities related to your project</li>
+      </ul>
 
-      <!-- <form action="" method="post" novalidate> -->
-        
-        <p class="govuk-body govuk-!-margin-bottom-0">Your email address</p>
-        <div id="event-name-hint" class="govuk-hint">sarah@example.com</div>
-
-        <div class="govuk-form-group govuk-!-margin-bottom-3">
-            <label class="govuk-label" for="verify">Verification code</label>
-            <div id="event-name-hint" class="govuk-hint">This should be x digits long.</div>
-            <input class="govuk-input govuk-input--width-5" id="verify" name="verify" type="number">
-        </div>
-
-        <p class="govuk-body-s govuk-!-margin-bottom-9"><a class="govuk-link" href="#">Resend verification email</a></p>
-
-        <a href="registerSuccess.html">
+      <a href="landing.html">
         <button class="govuk-button" data-module="govuk-button">
-          Submit code
+        Return to funding homepage
         </button>
       </a>
-
-      <!-- </form> -->
-
-
 
     </div>
 
