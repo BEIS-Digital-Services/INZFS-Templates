@@ -17,6 +17,11 @@
 /*Tags*/
 .govuk-tag { text-transform: initial; }
 
+/*Button group full width where link is outside button element*/
+@media (max-width: 40.05em) {
+    .govuk-button-group a { display:inline-block; width:100% }
+}
+
 /*Colours*/
 .govuk-colour--mid-grey { color:#6f777b }
 
@@ -34,6 +39,7 @@
 
 /*Overview completed text*/
 .summary-list-section--right { text-align:right; float:right; color:#003078 }
+.govuk-colour--blue { color:#1D70B8; font-weight:bold }
 
 /*Secondary button aligned right*/
 .govuk-button--right { text-align:right }
@@ -78,7 +84,7 @@
 }
 
 /* -- Sign In: Hide/Show password -- */
-.show-password__input-wrapper { display: table; display: flex; flex-direction: column; }
+.show-password__input-wrapper { display: table; display: flex; flex-direction: column; max-width: 55ex; }
 @media (min-width: 20em) {
     .show-password__input-wrapper { flex-direction: row; }
 }
