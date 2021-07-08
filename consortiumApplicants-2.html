@@ -66,157 +66,111 @@
 <div class="govuk-width-container">
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters">&nbsp;</div>
-    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
-        <p ><a class="govuk-body-m govuk-link" href="landing.html">Sign out</a></p>
+    <div class="govuk-grid-column-three-quarters"> 
+        <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back to previous question</a>
     </div>
+    <div class="govuk-grid-column-one-quarter"> </div>
   </div>
-
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">Application overview</h1>
-      <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Application incomplete</p>
-      <p class="govuk-body govuk-!-font-weight-regular">You have completed 0 of 7 sections.</p>
-    </div>
-  </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+        <h1 class="govuk-heading-l">Consortium details</h1>
+        <p class="govuk-body-s">Upload your consortium applicant partners details using the form provided in the download section of this page.</p>
+
+       <!-- <form action="" method="post" novalidate>  -->
+
+
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+                Upload consortium details
+                </label>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+
+
+            <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What file can i upload?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                </div>
+              </details>
+
+              <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Uploaded file</h2>
+              <p class="govuk-body nofileupload">No file uploaded</p>
+
+              <dl class="govuk-summary-list fileTable">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+                    uploaded file name
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                   8mb
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="#">
+                      Remove<span class="govuk-visually-hidden"> file uploaded</span>
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+
+
+              <div class="govuk-form-group">
+                <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="complete">
+                      Mark this question as complete
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <a href="applicationOverview.html">
+              <button class="govuk-button" data-module="govuk-button">
+                Save and return to application overview
+              </button>
+            </a>
+
+
+        <!-- </form>  -->
+      </div>
+
+
+
+      <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+
+            <p class="govuk-body-m govuk-colour--mid-grey govuk-!-margin-bottom-3">Downloads</p>
+            <p class="govuk-body-m govuk-!-margin-bottom-3"><a class="govuk-link" href="#">Download consortium details form</a></p>
+       
+
+
+        </aside>
   
-  <div class="govuk-grid-row">
-
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
-
-        <p class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-0">Your information <span class="summary-list-section summary-list-section--right">0 out of 3 completed</span></p>
-        <hr class="govuk-section-break govuk-!-padding-bottom-3 govuk-section-break--visible">
-
-        <dl class="govuk-summary-list">
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="eligibilityMatchFunding.html">
-                1. Confirm your eligibility and match funding<span class="govuk-visually-hidden">Confirm your eligibility and match funding</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">
-                2. Your organisation<span class="govuk-visually-hidden">Your organisation</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="consortiumApplicants-1.html">
-                3. Consortium applicant details<span class="govuk-visually-hidden">Consortium applicant details</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-        </dl>
-
-
-        <p class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-0">Your proposal <span class="summary-list-section summary-list-section--right">0 out of 3 completed</span></p>
-        <hr class="govuk-section-break govuk-!-padding-bottom-3 govuk-section-break--visible">
-
-
-        <dl class="govuk-summary-list">
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="proposalSummary.html">
-                4. Proposal summary<span class="govuk-visually-hidden">Proposal summary</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="businessProposal.html">
-                5. Business proposal, project plans and risk<span class="govuk-visually-hidden">Business proposal, project plans and risk</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="financialProposal.html">
-                6. Financial proposal and costs<span class="govuk-visually-hidden">Financial proposal and costs</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-        </dl>
-
-
-        <p class="govuk-body-l govuk-!-font-weight-bold govuk-!-margin-bottom-0">Un-assessed data <span class="summary-list-section summary-list-section--right">0 out of 1 completed</span></p>
-        <hr class="govuk-section-break govuk-!-padding-bottom-3 govuk-section-break--visible">
-
-
-        <dl class="govuk-summary-list">
-          <div class="govuk-body-m govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              <a class="govuk-link govuk-!-font-weight-regular" href="proposalSummary.html">
-                7. Performance data<span class="govuk-visually-hidden">Performance data</span>
-              </a>
-            </dt>
-            <dd class="govuk-summary-list__actions">
-              Not started
-            </dd>
-          </div>
-        </dl>
+      </div>
 
 
 
-        <a href="applicationSubmit.html">
-          <button class="govuk-button" data-module="govuk-button">
-            Submit application
-          </button>
-        </a>
-      
-    </div>
-
-    <div class="govuk-grid-column-one-third">
-
-      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
-
-      <aside class="app-related-items" role="complementary">
-
-          <p class="govuk-body-m govuk-colour--mid-grey govuk-!-margin-bottom-0">Deadline</p>
-          <p class="govuk-body-m govuk-!-margin-bottom-10">25 March at 11.59pm</p>
-
-          <p class="govuk-body-m govuk-colour--mid-grey govuk-!-margin-bottom-0">Application</p>
-          <p class="govuk-body-m govuk-!-margin-bottom-10">EEF18453SA</p>
-
-      </aside>
-
-      <aside class="app-related-items" role="complementary">
-
-        <p class="govuk-body-m govuk-colour--mid-grey">Downloads</p>
-        <p class="govuk-body-m govuk-!-margin-bottom-3"><a class="govuk-link" href="#">Download the guidance</a></p>
-        <p class="govuk-body-m"><a class="govuk-link" href="#">Download supporting documents</a></p>
-
-      </aside>
 
     </div>
-
-  </div>
-
   </main>
+
 
 </div>
 <!-- end main content component -->
@@ -249,5 +203,24 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        $(".nofileupload").show();
+        $(".fileTable").hide();
+    
+        $('input[type=file]').change(function(){
+          $(".nofileupload").hide();
+          $(".fileTable").show();
+        });
+    
+      });
+    
+    
+    </script>
+
   </body>
 </html>
