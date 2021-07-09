@@ -93,8 +93,8 @@
                 <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
             </div>
 
-
-            <details class="govuk-details" data-module="govuk-details">
+            
+              <details class="govuk-details" data-module="govuk-details">
                 <summary class="govuk-details__summary">
                   <span class="govuk-details__summary-text">
                     What file can i upload?
@@ -106,9 +106,9 @@
               </details>
 
               <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Uploaded file</h2>
-              <p class="govuk-body nofileupload">No file uploaded</p>
+              <p class="govuk-body nofileupload govuk-!-margin-bottom-6">No file uploaded</p>
 
-              <dl class="govuk-summary-list fileTable">
+              <!-- <dl class="govuk-summary-list fileTable">
                 <div class="govuk-summary-list__row">
                   <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
                     uploaded file name
@@ -122,7 +122,7 @@
                     </a>
                   </dd>
                 </div>
-              </dl>
+              </dl> -->
 
 
               <div class="govuk-form-group">
@@ -209,13 +209,14 @@
 
       $( document ).ready(function() {
 
-        $(".nofileupload").show();
-        $(".fileTable").hide();
+        // $(".nofileupload").show();
+        // $(".fileTable").hide();
     
-        $('input[type=file]').change(function(){
-          $(".nofileupload").hide();
-          $(".fileTable").show();
-        });
+        // $('input[type=file]').change(function(){
+        //   $(".nofileupload").hide();
+        //   $(".fileTable").show();
+        //   $(this).prop('disabled', true);
+        // });
     
       });
     
