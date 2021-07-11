@@ -67,158 +67,79 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="businessProposal-4.html" class="govuk-back-link">Back to previous question</a>
+      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
     </div>
     <div class="govuk-grid-column-one-quarter"> </div>
   </div>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
 
-<!--start: error message -->
+        <div class="govuk-grid-column-two-thirds">
+            
+        <!-- <form action="" method="post" novalidate> -->
 
-        <div style="display:none" class="govuk-error-summary hide" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
-          <h2 class="govuk-error-summary__title" id="error-summary-title">
-            There is a problem
-          </h2>
-          <div class="govuk-error-summary__body">
-            <ul class="govuk-list govuk-error-summary__list">
-              <li>
-                <a href="#word-count">You must enter some text before marking this question as complete</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+                <span class="govuk-caption-l">Question 3 of 3</span>
 
-<!--end: error message -->
-
-        <!-- <form action="" method="post" novalidate>  -->
-
-            <span class="govuk-caption-l">
-              Question 5 of 9
-            </span>
-            <div class="govuk-character-count" data-module="govuk-character-count" data-maxwords="1000">
-                
                 <div class="govuk-form-group">
-                  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="word-count">
-                      5.5. Environmental impact
-                    </label>
-                  </h1>
 
-                  <p class="govuk-body-s">Describe any environmental impact that developing your concept may cause. This may include:</p>
+                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
+                            <h1 class="govuk-fieldset__heading">
+                                Is your organisation VAT registered?
+                            </h1>
+                        </legend>
 
-                  <ul class="govuk-list govuk-list--bullet govuk-!-font-size-16">
-                    <li>emissions</li>
-                    <li>noise or vibrations</li>
-                    <li>visual intrusions</li>
-                  </ul>
-
-                  <textarea class="govuk-textarea govuk-js-character-count show" id="word-count" name="word-count" rows="10" aria-describedby="word-count-info"></textarea>
-
+                        <div class="govuk-radios govuk-radios--inline">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="vat-1" name="vat" type="radio" value="yes">
+                                <label class="govuk-label govuk-radios__label" for="vat-1">
+                                Yes
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="vat-2" name="vat" type="radio" value="no">
+                                <label class="govuk-label govuk-radios__label" for="vat-2">
+                                No
+                                </label>
+                            </div>
+                        </div>
+                    
+                    </fieldset>
                 </div>
-              
-                <div id="word-count-info" class="show govuk-hint govuk-character-count__message govuk-!-font-size-16" aria-live="polite">
-                  You have 1000 words remaining
-                </div>
 
 
-
-<!-- start: error message -->
-
-                <div class="govuk-character-count hide" style="display:none" data-module="govuk-character-count" data-maxwords="1000">
-                  <div class="govuk-form-group govuk-form-group--error">
-                    <span id="full-name-input-error" class="govuk-error-message">
-                      <span class="govuk-visually-hidden">Error:</span> You must enter some text before marking this question as complete
-                    </span>
-                    <textarea class="govuk-textarea govuk-js-character-count" id="word-count" name="word-count" rows="10" aria-describedby="word-count-info"></textarea>
-                    <div id="word-count-info" class="govuk-hint govuk-character-count__message govuk-!-font-size-16" aria-live="polite">
-                      You have 1000 words remaining
+                <div class="govuk-form-group">
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                        <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
+                            Mark as complete
+                        </label>
+                        </div>
                     </div>
-                  </div>
-                </div>
-
-<!-- end: error message -->
-
-
-                <div class="govuk-button--right">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                    Save progress
-                  </button>
                 </div>
 
 
-              
-              </div>
-
-
-
-              <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-                <div class="govuk-accordion__section ">
-                  <div class="govuk-accordion__section-header">
-                    <h2 class="govuk-accordion__section-heading">
-                      <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-1">
-                        Impact on the environment
-                      </span>
-                    </h2>
-                  </div>
-                  <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                    <p class="govuk-body-s">Outline any impact on the environment caused by your activities.</p>
-                    <p class="govuk-body-s">This could include emissions, noise, and vibrations from work, or visual intrusions on the local environment.</p>
-                    <p class="govuk-body-s">You should also state what you will do to reduce this impact, if possible.</p>
-                  </div>
-                </div>
-
-
-              </div>
-
-
-
-
-              <div class="govuk-form-group">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="complete">
-                      Mark this question as complete
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-
-              <a href="businessProposal-6.html">
-                <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+                <a href="#">
+                  <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
                   Save and continue to next question
-                </button>
-              </a>
+                  </button>
+                </a>
 
-
-              <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="businessProposal.html">Return to the business proposal overview</a></p>
-
-      
+                <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
     
-    
-             <!-- </form>   -->
-      </div>
 
 
 
+        <!-- </form> -->
 
-
-
-
-
-
-
-
-
-
+        </div>
 
 
     </div>
+
   </main>
 
 
@@ -253,39 +174,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-
-  $( document ).ready(function() {
-
-    $('.hide').hide();
-    $('.show').show();
-
-    $('input[type="checkbox"]#complete').click(function(){
-        if($(this).prop("checked") == true){
-            console.log("Checkbox is checked.");
-
-            if (!$(".govuk-textarea").val()) {
-                $('style').remove();
-                $('.hide').show();
-                $('.show').remove();
-                $(window).scrollTop(0);
-                return false;
-            }
-        }
-        else if($(this).prop("checked") == false){
-          console.log("Checkbox is unchecked.");
-        }
-    });
-
-});
-
-</script>
-
-
-
   </body>
 </html>
