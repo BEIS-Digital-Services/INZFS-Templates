@@ -65,15 +65,13 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
+      <a href="yourOrganisation.html" class="govuk-back-link">Back</a>
     </div>
     <div class="govuk-grid-column-one-quarter govuk-signout-right">  
     </div>
   </div>
-
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -81,79 +79,50 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
 
-            <span class="govuk-caption-l">Question 6 of 6</span>
+          <span class="govuk-caption-l">Question 1 of 9</span>
+          <h1 class="govuk-heading-l">Organisation details</h1>
 
+          <div class="govuk-form-group">
+
+            <label class="govuk-label govuk-label" for="name">Name</label>
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
-                  <h1 class="govuk-fieldset__heading">
-                    How is your organisation currently funded?
-                  </h1>
-                </legend>
-                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded" name="currentfunding" type="radio" value="funded">
-                    <label class="govuk-label govuk-radios__label" for="funded">
-                      Not for profit
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-1" name="currentfunding" type="radio" value="funded-1">
-                    <label class="govuk-label govuk-radios__label" for="funded-1">
-                      Private company
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-2" name="currentfunding" type="radio" value="funded-2">
-                    <label class="govuk-label govuk-radios__label" for="funded-2">
-                      Public limited company
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-3" name="currentfunding" type="radio" value="funded-3">
-                    <label class="govuk-label govuk-radios__label" for="funded-3">
-                      Public sector organisation
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-4" name="currentfunding" type="radio" value="funded-4">
-                    <label class="govuk-label govuk-radios__label" for="funded-4">
-                      Research organisation
-                    </label>
-                  </div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-5" name="currentfunding" type="radio" value="funded-5">
-                    <label class="govuk-label govuk-radios__label" for="funded-5">
-                      University
-                    </label>
-                  </div>
-                  
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="funded-6" name="currentfunding" type="radio" value="other" data-aria-controls="other-org">
-                    <label class="govuk-label govuk-radios__label" for="funded-6">
-                      Other
-                    </label>
-                  </div>
-                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="other-org">
-                    <div class="govuk-form-group">
-                      <label class="govuk-label" for="funded-7">
-                        Organisation type
-                      </label>
-                      <input class="govuk-input govuk-!-width-one-third" id="funded-7" name="currentfunding" type="other" spellcheck="false" autocomplete="other"></div>
-                  </div>
-
-
-                </div>
-            
-              </fieldset>
+              <input class="govuk-input govuk-input--width-20" id="name" name="name" type="name" spellcheck="false" aria-describedby="name-hint" autocomplete="name">
             </div>
 
 
-          <a href="registerThanks.html">
-            <button class="govuk-button govuk-button" data-module="govuk-button">
-            Submit
+            <label class="govuk-label govuk-label" for="website">Website</label>
+            <div id="website-hint" class="govuk-hint">
+              Enter your organisation's website address, if you have one
+            </div>
+            <div class="govuk-form-group">
+              <input class="govuk-input govuk-input--width-20" id="website" name="website" type="website" spellcheck="false" aria-describedby="website-hint" autocomplete="website">
+            </div>
+
+
+
+            <div class="govuk-form-group">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
+                    Mark this question as complete
+                </label>
+                </div>
+            </div>
+            </div>
+
+          </div>
+
+
+          <a href="yourOrganisation-6.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+            Save and continue to next question
             </button>
           </a>
+
+          <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
+
+
 
 
 
@@ -200,6 +169,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-
   </body>
 </html>
