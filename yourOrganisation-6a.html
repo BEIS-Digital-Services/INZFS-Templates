@@ -84,15 +84,21 @@
 
           <div class="govuk-form-group">
 
-            <label class="govuk-label govuk-label" for="postcode">Postcode</label>
+            <p class="govuk-body">Postcode</p>
+            <p class="govuk-body govuk-!-font-weight-bold">SE22 8DE &nbsp;&nbsp;&nbsp;<a class="govuk-link  govuk-!-font-weight-regular" href="#">Change</a></p>
+
             <div class="govuk-form-group">
-              <input class="govuk-input govuk-input--width-20" id="postcode" name="postcode" type="postcode" spellcheck="false" aria-describedby="name-hint" autocomplete="name">
-            </div>
+              <label class="govuk-label" for="select-address">
+                Select an address
+              </label>
+              <select class="govuk-select" id="select-address" name="select-address">
+                <option value="address0" selected>1 address found</option>
+                <option value="address1">Address Lorem Ipsum Lorem Ipsum</option>
+              </select>
+            </div>           
 
-            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-               Find address
-             </button>
 
+             <p class="govuk-body"><a class="govuk-link" href="#">I can't find my address in the list</a></p>
 
              <details class="govuk-details" data-module="govuk-details">
                 <summary class="govuk-details__summary">
@@ -119,7 +125,7 @@
           </div>
 
 
-          <a href="yourOrganisation-6a.html">
+          <a href="yourOrganisation-6b.html">
             <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
             Save and continue to next question
             </button>
