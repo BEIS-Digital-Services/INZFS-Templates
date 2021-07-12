@@ -8,11 +8,11 @@
   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" org-ages="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="mask-icon" href="assets/images/govuk-mask-icon.svg" color="#0b0c0c">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" org-ages="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" org-ages="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" org-ages="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" href="assets/images/govuk-apple-touch-icon.png">
   
     <!--[if !IE 8]><!-->
@@ -65,14 +65,13 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back to previous question</a>
+        <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back to previous question</a>
     </div>
-    <div class="govuk-grid-column-one-quarter"> </div>
+    <div class="govuk-grid-column-one-quarter govuk-signout-right">  
+    </div>
   </div>
-
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -80,49 +79,108 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
 
-          <div class="govuk-form-group govuk-!-margin-bottom-9">
+          <span class="govuk-caption-l">Question 8 of 9</span>
 
-              <span class="govuk-caption-l">Question 3 of 5</span>
 
-              <div class="govuk-form-group">
+          <div class="govuk-form-group">
 
-                <fieldset class="govuk-fieldset" role="group">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
-                    <h1 class="govuk-fieldset__heading">
-                      4.3. Will your project be mainly carried out at your organisation's registered address?
-                    </h1>
-                  </legend>
-                  <div class="govuk-radios govuk-radios--inline">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                      <label class="govuk-label govuk-radios__label" for="changed-name">
-                        Yes
-                      </label>
+                <fieldset class="govuk-fieldset" aria-describedby="market-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
+                        <h1 class="govuk-fieldset__heading">
+                            How is your organisation currently funded?
+                        </h1>
+                    </legend>
+                    <div id="market-hint" class="govuk-hint">
+                    Select all that apply.
                     </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                      <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                        No
-                      </label>
+                    <div class="govuk-checkboxes">
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market" name="market" type="checkbox" value="no-funding">
+                            <label class="govuk-label govuk-checkboxes__label" for="market">
+                            No funding
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-2" name="market" type="checkbox" value="founders">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-2">
+                            Founders (including bank loans)
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-3" name="market" type="checkbox" value="friends">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-3">
+                            Friends and family
+                            </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-4" name="market" type="checkbox" value="grants">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-4">
+                            Public sector grants
+                            </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-5" name="market" type="checkbox" value="angelinvestment">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-5">
+                            Angel investment
+                            </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-6" name="market" type="checkbox" value="venture">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-6">
+                            Venture capital
+                            </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-7" name="market" type="checkbox" value="equity">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-7">
+                            Private equity
+                            </label>
+                        </div>
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="market-8" name="market" type="checkbox" value="flotation">
+                            <label class="govuk-label govuk-checkboxes__label" for="market-8">
+                            Stock market flotation
+                            </label>
+                        </div>
+
+
                     </div>
-                  </div>
-              
+                
                 </fieldset>
 
             </div>
 
 
-          </div>
 
 
+            <div class="govuk-form-group">
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-org-age-19" for="complete">
+                        Mark this question as complete
+                    </label>
+                    </div>
+                </div>
+            </div>
 
-          <a href="proposalSummary-4.html">
-            <button class="govuk-button govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-              Save and continue to next question
+
+          <a href="yourOrganisation-13.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+            Save and continue to next question
             </button>
           </a>
 
-          <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="proposalSummary.html">Return to proposal summary</a></p>
+          <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
+
+
+
 
 
         <!-- </form> -->
