@@ -1324,7 +1324,7 @@ TimeoutWarning.prototype.startUiCountdown = function () {
     } else {
       atText += '.';
     }
-    var extraText = ' We do this to keep your information secure.';
+    var extraText = ' <p>We do this to keep your information secure.</p>';
 
     if (timerExpired) {
       // TO DO - client/server interaction
@@ -1334,7 +1334,7 @@ TimeoutWarning.prototype.startUiCountdown = function () {
       $countdown.innerHTML = 'You are about to be redirected';
       $accessibleCountdown.innerHTML = 'You are about to be redirected';
 
-      setTimeout($module.redirect.bind($module), 4000);
+      setTimeout($module.redirect.bind($module), 0);
     } else {
       seconds--;
 
