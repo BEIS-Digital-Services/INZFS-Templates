@@ -87,7 +87,7 @@
               <fieldset class="govuk-fieldset" aria-describedby="eligible-fund-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                   <h1 class="govuk-fieldset__heading">
-                    1.1. Are you eligible to apply for this fund?
+                    1. Are you eligible to apply for this fund?
                   </h1>
                 </legend>
                 <div id="eligible-fund-hint" class="govuk-hint">
@@ -112,12 +112,7 @@
             </div>
 
 
-
-
             <p class="govuk-body"><a class="govuk-link" href="eligibility-start.html">Check if EEF is the right fund for you</a></p>
-            <p class="govuk-body"><a class="govuk-link" href="#">Download the full eligibility criteria and supporting guidance</a></p>
-
-
 
 
               <div class="govuk-form-group">
@@ -131,11 +126,10 @@
                 </div>
               </div>
 
-              <a href="eligibilityMatchFunding.html">
+
                 <button class="govuk-button govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                  Save and return to Eligibility and match funding
+                  Save and continue
                 </button>
-              </a>
 
 
 
@@ -228,18 +222,18 @@
 
   $( document ).ready(function() {
 
+    $('.govuk-button').click(function (e) {
 
-    $('input[type="radio"]#eligible-fund-2').click(function(){
-        if($(this).prop("checked") == true){
-            window.location.href = 'eligibilityMatchFunding-no.html';
+        if ($('#eligible-fund').is(':checked')) {
+          window.location.href = 'applicationOverview.html';
         }
-        else if($(this).prop("checked") == false){
-          window.location.href = '#';
+        else if ($('#eligible-fund-2').is(':checked')) {
+          window.location.href = 'eligibilityMatchFunding-no.html';
         }
-    });
 
 });
 
+});
 
 </script>
 
