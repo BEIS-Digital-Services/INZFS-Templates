@@ -111,11 +111,10 @@
               </fieldset>
             </div>
 
-            <a href="consortiumApplicants-2.html">
+
               <button class="govuk-button" data-module="govuk-button">
                 Save and continue
               </button>
-            </a>
 
 
         <!-- </form>  -->
@@ -170,19 +169,21 @@
 
     <script type="text/javascript">
 
-      $( document ).ready(function() {
-    
-    
-        $('input[type="radio"]#sole').click(function(){
-            if($(this).prop("checked") == true){
-                window.location.href = 'applicationOverview.html';
-            }
-            else if($(this).prop("checked") == false){
-              window.location.href = '#';
-            }
-        });
-    
-    });
+
+    $( document ).ready(function() {
+
+$('.govuk-button').click(function (e) {
+
+    if ($('#sole').is(':checked')) {
+      window.location.href = 'applicationOverview.html';
+    }
+    else if ($('#sole-2').is(':checked')) {
+      window.location.href = 'consortiumApplicants-2.html';
+    }
+
+});
+
+});
     
     
     </script>
