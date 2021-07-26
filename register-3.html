@@ -79,21 +79,44 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="#" method="post" novalidate> -->
 
-          <div class="govuk-form-group">
-
-            <span class="govuk-caption-l">Question 3 of 6</span>
-            <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6">
-              <label class="govuk-label govuk-label--l" for="projectname">
-                What is the name of your project?
-              </label>
-            </h1>
-
-            <div id="projectname-hint" class="govuk-hint">
-              This can be a working title. You can change this later.
-            </div>
-            <input class="govuk-input govuk-input--width-20" id="projectname" name="projectname" type="text" spellcheck="false" aria-describedby="projectname-hint">
-
-          </div>
+          
+          <span class="govuk-caption-l">Question 3 of 5</span>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="project-start-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        When do you estimate to start the project?
+                    </h1>
+                  </legend>
+                  <div id="project-start-hint" class="govuk-hint">
+                    For example, 12 11 2022
+                  </div>
+                  <div class="govuk-date-input" id="project-start">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="project-start-day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="project-start-day" name="project-start-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="project-start-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="project-start-month" name="project-start-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="project-start-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="project-start-year" name="project-start-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                  </div>
+              
+                </fieldset>
+              </div>
 
 
           <a href="register-4.html">
