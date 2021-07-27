@@ -67,7 +67,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-        <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back to previous question</a>
+      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
     </div>
     <div class="govuk-grid-column-one-quarter govuk-signout-right">  
     </div>
@@ -77,64 +77,50 @@
     <div class="govuk-grid-row">
 
       <div class="govuk-grid-column-two-thirds">
-        <!-- <form action="" method="post" novalidate> -->
-
-          <span class="govuk-caption-l">Question 2 of 9</span>
-          <h1 class="govuk-heading-l">What is your organisation's registered address?</h1>
+        <!-- <form action="#" method="post" novalidate> -->
 
           <div class="govuk-form-group">
 
-            <p class="govuk-body">Postcode</p>
-            <p class="govuk-body govuk-!-font-weight-bold">SE22 8DE &nbsp;&nbsp;&nbsp;<a class="govuk-link  govuk-!-font-weight-regular" href="#">Change</a></p>
-
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="select-address">
-                Select an address
+            <span class="govuk-caption-l">Question 2 of 6</span>
+            <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6">
+              <label class="govuk-label govuk-label--l" for="contact">
+                Your contact details
               </label>
-              <select class="govuk-select" id="select-address" name="select-address">
-                <option value="address0" selected>1 address found</option>
-                <option value="address1">Address Lorem Ipsum Lorem Ipsum</option>
-              </select>
-            </div>           
+            </h1>
 
-
-             <p class="govuk-body"><a class="govuk-link" href="#">I can't find my address in the list</a></p>
-
-             <details class="govuk-details" data-module="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    The organisation is outside the UK
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                </div>
-              </details>
 
             <div class="govuk-form-group">
-            <div class="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
-                    Mark this question as complete
-                </label>
-                </div>
+              <label class="govuk-label" for="phone">
+                Mobile number
+              </label>
+              <div id="phone-hint" class="govuk-hint">
+                For international numbers, include the country code.
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="phone" name="phone" type="tel" autocomplete="tel" spellcheck="false" aria-describedby="phone-hint">
+
             </div>
+
+          
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email">
+                Email address
+              </label>
+              <div id="email-hint" class="govuk-hint">
+                This is the email you'll use to sign in and receive updates.
+              </div>
+              <input class="govuk-input govuk-input--width-20" id="email" name="email" type="text" spellcheck="false" aria-describedby="email-hint">
             </div>
+
 
           </div>
 
 
-          <a href="yourOrganisation-7.html">
-            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-            Save and continue to next question
+          <a href="register-3.html">
+            <button class="govuk-button" data-module="govuk-button">
+              Save and continue
             </button>
           </a>
-
-          <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
-
-
-
 
 
         <!-- </form> -->
