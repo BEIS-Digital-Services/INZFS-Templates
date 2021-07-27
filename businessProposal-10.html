@@ -94,22 +94,22 @@
 
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
-                Upload a Letter of support (optional)
+                Upload a Letter of support
                 </label>
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      What file can i upload?
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                  </div>
+                </details>
                 <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
             </div>
 
-            
-              <details class="govuk-details" data-module="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    What file can i upload?
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                </div>
-              </details>
+          
 
               <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Uploaded file</h2>
 
@@ -131,15 +131,28 @@
 
 
               <div class="govuk-form-group">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="complete">
-                      Mark this question as complete
-                    </label>
+                <fieldset class="govuk-fieldset">
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="markquestion" name="markquestion" type="checkbox" value="complete">
+                      <label class="govuk-label govuk-checkboxes__label" for="markquestion">
+                        Mark this question as complete
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="markquestion-2" name="markquestion" type="checkbox" value="na">
+                      <label class="govuk-label govuk-checkboxes__label" for="markquestion-2">
+                        Mark this question as not applicable
+                      </label>
+                    </div>
                   </div>
-                </div>
+              
+                </fieldset>
               </div>
+
+
+
+
 
 
               <a href="businessProposal.html">
