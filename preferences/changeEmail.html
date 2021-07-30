@@ -70,109 +70,58 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
       <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
     </div>
     <div class="govuk-grid-column-one-quarter govuk-signout-right">  
-        <p ><a class="govuk-body-m govuk-link" href="youraccount.html">Your account</a></p>
+      <p ><a class="govuk-body-m govuk-link" href="youraccount.html">Your account</a></p>
     </div>
   </div>
+
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-  
   <div class="govuk-grid-row">
-
     <div class="govuk-grid-column-two-thirds">
 
-      <h2 class="govuk-heading-l">Your account details</h2>
+      <h1 class="govuk-heading-xl">Change your email</h1>
+      <p class="govuk-body">You currently login and get an access code sent to: <strong>k******@gmail.com</strong>. To change you will need to re-verify your email address</p>
 
-      <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Email address
-          </dt>
-          <dd class="govuk-summary-list__value">
-           fred@flintstone.com
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="changeEmail.html">
-              Change<span class="govuk-visually-hidden">Email address</span>
-            </a>
-          </dd>
+      <!-- <form action="" method="post" novalidate> -->
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="email">
+           New email address
+          </label>
+          <div id="email-hint" class="govuk-hint">
+            Add your new email address
+          </div>
+          <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
         </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Password
-          </dt>
-          <dd class="govuk-summary-list__value">
-            ******************
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="changePassword.html">
-              Change<span class="govuk-visually-hidden">Password</span>
-            </a>
-          </dd>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="emailconfirm">
+           Confirm your email address
+          </label>
+
+          <input class="govuk-input govuk-input--width-20" id="emailconfirm" name="emailconfirm" type="email" spellcheck="false" autocomplete="email">
         </div>
-      </dl>
 
 
+        <a href="verifyEmail.html">
+          <button class="govuk-button" data-module="govuk-button">
+            Change your email and verify
+          </button>
+        </a>
 
-      <h2 class="govuk-heading-l">Your security preferences</h2>
-      <p class="govuk-body govuk-!-margin-bottom-3">This is how you get access codes</p>
-  
-  
-        <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Text message            
-            </dt>
-            <dd class="govuk-summary-list__value">
-              +123456789011
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="addPhone.html">
-                Add<span class="govuk-visually-hidden">Text message</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Email address
-            </dt>
-            <dd class="govuk-summary-list__value">
-              fred@flintstone.com
-            </dd>
-            <dd class="govuk-summary-list__actions">
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Authenticator App
-            </dt>
-            <dd class="govuk-summary-list__value">
-              *****************
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="addApp.html">
-                Add<span class="govuk-visually-hidden">Authenticator App</span>
-              </a>
-            </dd>
-          </div>
-        </dl>
-
-      
-    </div>
-
-    <div class="govuk-grid-column-one-third">
+      <!-- </form> -->
 
     </div>
 
   </div>
-
   </main>
-
 </div>
 <!-- end main content component -->
 
@@ -204,5 +153,39 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+function createPassword() {
+  var x = document.getElementById("password-create");
+  if (x.type === "password") {
+    x.type = "text";
+    document.getElementById("buttonText").innerHTML = "Hide"
+  } else {
+    x.type = "password";
+    document.getElementById("buttonText").innerHTML = "Show"
+  }
+}
+
+    function confirmPassword() {
+  var x = document.getElementById("password-confirm");
+  if (x.type === "password") {
+    x.type = "text";
+    document.getElementById("buttonText1").innerHTML = "Hide"
+  } else {
+    x.type = "password";
+    document.getElementById("buttonText1").innerHTML = "Show"
+  }
+}
+
+</script>
+
+
+
+
+
   </body>
 </html>
