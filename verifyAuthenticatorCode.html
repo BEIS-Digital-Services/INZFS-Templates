@@ -64,70 +64,59 @@
 
 <!-- main content component -->
 <div class="govuk-width-container">
-  
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters">
-      <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="index.html">Energy Entrepeneurs Fund 9</a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            Sign in to your application
-          </li>
-        </ol>
-      </nav>
+      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
     </div>
-    <div class="govuk-grid-column-one-quarter"></div>
+    <div class="govuk-grid-column-one-quarter"> </div>
   </div>
-
 
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+        <!-- <form action="" method="post" novalidate> -->
+
+          <div class="govuk-form-group">
+
+            <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6 "><label class="govuk-label govuk-label--l" for="code">
+               Enter your verification code
+              </label>
+            </h1>
+
+           <div id="code-generated-hint" class="govuk-hint">
+            Enter the code generated from your chosen authentication method
+            </div>
+            <div class="govuk-form-group govuk-!-margin-bottom-9">
+            <input class="govuk-input govuk-input--width-10" id="code" name="code" type="number" spellcheck="false" autocomplete="code" aria-describedby="code-generated-hint">
+            </div>
+
+          </div>
+
+          <a href="applicationOverview.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+              Continue
+            </button>
+          </a>
 
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-body-s"><a class="govuk-link" href="#">Choose alternative verification method</a></p>
+          <p class="govuk-body-s"><a class="govuk-link" href="#">Problems receiving your code?</a></p>
 
-      <h1 class="govuk-heading-xl">Your application</h1>
-      <p class="govuk-body-l">Sign in to an existing account</p>
+        <!-- </form> -->
 
-      <!-- <form action="" method="post" novalidate> -->
+      </div>
 
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="email">
-            Your email address
-          </label>
-          <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" autocomplete="email">
-        </div>
 
-        <div class="govuk-form-group govuk-!-margin-bottom-2">
-          <label class="govuk-label" for="password">
-            Password
-          </label>
-          <input class="govuk-input govuk-input--width-20" id="password" name="password" type="password" spellcheck="false" autocomplete="password">
-        </div>
 
-        <p class="govuk-body-s"><a class="govuk-link" href="accountForgottenPassword.html">Forgotten your password?</a></p>
-
-        <a href="verifyAuthenticatorCode.html">
-        <button class="govuk-button" data-module="govuk-button">
-          Sign in
-        </button>
-        </a>
-
-      <!-- </form> -->
-
-      <p class="govuk-body-s"><a class="govuk-link" href="accountRegister.html">Register as a new user</a></p>
-
-      <p class="govuk-body-s"><a class="govuk-link" href="#">Need help signing in or creating an account?</a></p>
 
 
     </div>
-
-  </div>
   </main>
+
+
 </div>
 <!-- end main content component -->
 
