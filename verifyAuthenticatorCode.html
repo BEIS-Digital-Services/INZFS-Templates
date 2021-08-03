@@ -79,21 +79,32 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
 
-          <h1 class="govuk-heading-xl">Verify your email address</h1>
-          <p class="govuk-body-l govuk-!-margin-bottom-0">You’ll need to verify your email address to continue. </p>
-          <p class="govuk-body-l">We have sent a verification link to your email address, click this link to verify your account.</p>
+          <div class="govuk-form-group">
 
-          <p class="govuk-body govuk-!-margin-bottom-0">Your email address</p>
-          <p class="govuk-body">sarah@example.com</p>
+            <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6 "><label class="govuk-label govuk-label--l" for="code">
+               Enter your verification code
+              </label>
+            </h1>
 
+           <div id="code-generated-hint" class="govuk-hint">
+            Enter the code generated from your chosen authentication method
+            </div>
+            <div class="govuk-form-group govuk-!-margin-bottom-9">
+            <input class="govuk-input govuk-input--width-10" id="code" name="code" type="number" spellcheck="false" autocomplete="code" aria-describedby="code-generated-hint">
+            </div>
 
-          <a href="successEmail.html">
-            <button class="govuk-button govuk-button govuk-!-margin-top-6" data-module="govuk-button">
-              Resend email
+          </div>
+
+          <a href="applicationOverview.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+              Continue
             </button>
           </a>
 
-         
+
+          <p class="govuk-body-s"><a class="govuk-link" href="#">Choose alternative verification method</a></p>
+          <p class="govuk-body-s"><a class="govuk-link" href="#">Problems receiving your code?</a></p>
+
         <!-- </form> -->
 
       </div>
