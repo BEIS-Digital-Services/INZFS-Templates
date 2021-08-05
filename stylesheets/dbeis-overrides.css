@@ -121,6 +121,9 @@
 @media print {
     .show-password__toggle { font-size: 14pt; line-height: 1.15;}
 }
+@media (max-width: 40em) {
+    .govuk-youraccount-right { text-align:left }
+}
 @media (max-width: 19.99em) {
     .show-password__toggle { padding: 5px; width: 100%; margin-top: -2px; white-space: normal;}
 }
