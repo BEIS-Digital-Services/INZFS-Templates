@@ -35,7 +35,7 @@
 }
 
 /*Sign out link*/
-.govuk-signout-right { text-align:right }
+.govuk-youraccount-right { text-align:right }
 .govuk-header__link--signout { float:right; color:#fff; text-align:right }
 
 /*Overview completed text*/
