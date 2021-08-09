@@ -91,6 +91,20 @@
 
       <!-- <form action="" method="post" novalidate> -->
 
+ 
+        <div class="govuk-form-group govuk-!-margin-bottom-2">
+          <label class="govuk-label" for="password">
+            Enter your current password
+          </label>
+          <div class="show-password__input-wrapper govuk-!-margin-bottom-6">
+            <input class="govuk-input govuk-input--width-20" id="password-current" name="password" type="password" spellcheck="false">
+            <button class="show-password__toggle" aria-controls="password-current" type="button" aria-label="Show password" id="buttonText" onclick="currentPassword()">Show</button>
+            <span class="govuk-visually-hidden" aria-live="polite">Your password is hidden</span>
+          </div>
+
+        </div>       
+
+
         <div class="govuk-form-group">
           <label class="govuk-label" for="email">
            New email address
@@ -158,26 +172,14 @@
 
 <script type="text/javascript">
 
-
-function createPassword() {
-  var x = document.getElementById("password-create");
+function currentPassword() {
+  var x = document.getElementById("password-current");
   if (x.type === "password") {
     x.type = "text";
     document.getElementById("buttonText").innerHTML = "Hide"
   } else {
     x.type = "password";
     document.getElementById("buttonText").innerHTML = "Show"
-  }
-}
-
-    function confirmPassword() {
-  var x = document.getElementById("password-confirm");
-  if (x.type === "password") {
-    x.type = "text";
-    document.getElementById("buttonText1").innerHTML = "Hide"
-  } else {
-    x.type = "password";
-    document.getElementById("buttonText1").innerHTML = "Show"
   }
 }
 
