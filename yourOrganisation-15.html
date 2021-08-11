@@ -86,18 +86,49 @@
         <!-- <form action="" method="post" novalidate> -->
 
           <span class="govuk-caption-l">Question 2 of 7</span>
-          <h1 class="govuk-heading-l">What is your parent organisation’s registered address?</h1>
 
           <div class="govuk-form-group">
 
-            <label class="govuk-label govuk-label" for="postcode">Postcode</label>
-            <div class="govuk-form-group">
-              <input class="govuk-input govuk-input--width-20" id="postcode" name="postcode" type="postcode" spellcheck="false" autocomplete="name">
-            </div>
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    What is your parent organisation’s registered address?
+                  </h1>
+                </legend>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-1">
+                    Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-line-2">
+                    <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
+                  </label>
+                  <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-town">
+                    Town or city
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-county">
+                    County
+                  </label>
+                  <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+              
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="address-postcode">
+                    Postcode
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
+              
+              </fieldset>
 
-            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-               Find address
-             </button>
+            </div>
 
 
              <details class="govuk-details" data-module="govuk-details">
@@ -111,21 +142,20 @@
                 </div>
               </details>
 
+
             <div class="govuk-form-group">
-            <div class="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
-                    Mark this question as complete
-                </label>
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
+                        Mark this question as complete
+                    </label>
+                    </div>
                 </div>
             </div>
-            </div>
-
-          </div>
 
 
-          <a href="yourOrganisation-15a.html">
+          <a href="yourOrganisation-16.html">
             <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
             Save and continue to next question
             </button>
@@ -133,19 +163,13 @@
 
           <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
 
-
-
-
-
         <!-- </form> -->
 
       </div>
 
 
-
-
-
     </div>
+    
   </main>
 
 
