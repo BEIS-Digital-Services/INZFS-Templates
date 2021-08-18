@@ -78,10 +78,10 @@
             <a class="govuk-breadcrumbs__link" href="applicationOverview.html">Application overview</a>
           </li>
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="proposalSummary.html">4. Proposal summary</a>
+            <a class="govuk-breadcrumbs__link" href="summaryFinances.html">2. Summary of finances</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            4.6. Grant justification
+            2.4. Organisation age
           </li>
         </ol>
       </nav>
@@ -93,76 +93,66 @@
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
-
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+
+        <div class="govuk-grid-column-two-thirds">
+            
         <!-- <form action="" method="post" novalidate> -->
 
-
-            <span class="govuk-caption-l">
-              Question 6 of 6
-            </span>
-            <div class="govuk-character-count" data-module="govuk-character-count" data-maxwords="1000">
-                <div class="govuk-form-group">
-                  <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6"><label class="govuk-label govuk-label--l" for="word-count">
-                    Grant justification
-                    </label>
-                  </h1>
-                  <div id="description-hint" class="govuk-hint">
-                    Explain why you need public money for your project.
-                  </div>
-
-                  <textarea class="govuk-textarea govuk-js-character-count show" id="word-count" name="word-count" rows="10" aria-describedby="word-count-info"></textarea>
-                </div>
-              
-                <div id="word-count-info" class="show govuk-hint govuk-character-count__message govuk-!-font-size-16" aria-live="polite">
-                  You have 1000 words remaining
-                </div>
-
-                <div class="govuk-button--right">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                    Save progress
-                  </button>
-                </div>
-              
-              </div>
-
+           
 
               <div class="govuk-form-group">
-                <div class="govuk-checkboxes">
-                  <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-16" for="complete">
-                      Mark this question as complete
-                    </label>
-                  </div>
+                <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="turnover">
+                    Most recent annual turnover
+                  </label>
+                </h1>
+                <div id="turnover-hint" class="govuk-hint">
+                    The amount of money your business has taken over a period of 12 months.
                 </div>
-              </div>            
+                <div class="govuk-input__wrapper">
+                  <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                  <input class="govuk-input govuk-input--width-5" id="turnover" name="turnover" type="text"  aria-describedby="turnover-hint" spellcheck="false">
+                </div>
+              </div>
+              
+
+                <div class="govuk-form-group">
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                        <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
+                            Mark this question as complete
+                        </label>
+                        </div>
+                    </div>
+                </div>
 
 
-            <a href="proposalSummary.html">
-              <button class="govuk-button govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                Save and return to Proposal summary
-              </button>
-            </a>
+                <a href="summaryFinances-4b.html">
+                  <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+                    Save and continue to next question
+                  </button>
+                </a>
+                
+                <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous question</a></p>
+               
 
-            <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous question</a></p>
-
-            
 
 
         <!-- </form> -->
-      </div>
+
+        </div>
 
 
     </div>
+
   </main>
 
 
 </div>
 <!-- end main content component -->
 
-<!-- start Footer component -->
+<!-- balance-sheet Footer component -->
 <footer class="govuk-footer " role="contentinfo">
     <div class="govuk-width-container ">
       <div class="govuk-footer__meta">
