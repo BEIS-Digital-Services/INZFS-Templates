@@ -72,7 +72,19 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="businessProposal.html" class="govuk-back-link">Back to business proposal overview</a>
+      <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="applicationOverview.html">Application overview</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            <a class="govuk-breadcrumbs__link" href="businessProposal.html">5. Business proposal</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            5.1. Proposal
+          </li>
+        </ol>
+      </nav>
     </div>
         <div class="govuk-grid-column-one-quarter govuk-youraccount-right">  
       <p><a class="govuk-body-m govuk-link" href="preferences/youraccount.html">Your account</a></p>
@@ -114,17 +126,17 @@
                 
                 <div class="govuk-form-group">
                   <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="word-count">
-                      5.1. Proposal
+                      Proposal
                     </label>
                   </h1>
 
-                  <p class="govuk-body-s">Describe your concept. You should include information and supporting evidence about:</p>
+                  <p class="govuk-body-s">Describe your innovation. You should include information and supporting evidence about:</p>
 
                   <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                    <li>what makes your concept different to existing products or services</li>
+                    <li>what makes your innovation different to existing products or services</li>
                     <li>your target marketplace and its estimated value</li>
-                    <li>how your concept provides value to customers</li>
-                    <li>other sectors you could target in the concept's first 3 years</li>
+                    <li>how your innovation provides value to customers</li>
+                    <li>other sectors you could target in the innovation's first 3 years</li>
                     <li>your competitors</li>
                   </ul>
 
@@ -163,16 +175,43 @@
 
 
               <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+
+
+                <div class="govuk-accordion__section ">
+                  <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                      <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-0">
+                        Assessment criteria
+                      </span>
+                    </h2>
+                  </div>
+                  <div id="accordion-default-content-0" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-0">
+                    <p class="govuk-body-s">Factors our assessors will consider include, but are not limited to:</p>
+                    <ul class="govuk-body-s govuk-list govuk-list--bullet">
+                      <li>is there a clear problem your innovation solves?</li>
+                      <li>have you identified and understood your target market?</li>
+                      <li>is the market large enough to support a business?</li>
+                      <li>is there strong evidence for market potential?</li>
+                      <li>do you understand your competitors?</li>
+                      <li>does your innovation have a unique selling point?</li>
+                      <li>is the overall business opportunity realistic and compelling?</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+
                 <div class="govuk-accordion__section ">
                   <div class="govuk-accordion__section-header">
                     <h2 class="govuk-accordion__section-heading">
                       <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-1">
-                        How is your concept different to existing products or services?
+                        How is your innovation different to existing products or services?
                       </span>
                     </h2>
                   </div>
                   <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                    <p class="govuk-body-s">Describe how your concept improves on products or services which are already available.</p>
+                    <p class="govuk-body-s">Describe how your innovation improves on products or services which are already available.</p>
                     <p class="govuk-body-s">For example, your idea may be:</p>
                     <ul class="govuk-body-s govuk-list govuk-list--bullet">
                       <li>more effective</li>
@@ -197,9 +236,9 @@
                     <p class="govuk-body-s">Describe who you might sell your product to.</p>
                     <p class="govuk-body-s">This should include:</p>
                     <p class="govuk-body-s govuk-!-margin-bottom-0 govuk-!-font-weight-bold">Sector</p>
-                    <p class="govuk-body-s">The main industries which could use your concept.</p>
+                    <p class="govuk-body-s">The main industries which could use your innovation.</p>
                     <p class="govuk-body-s govuk-!-margin-bottom-0 govuk-!-font-weight-bold">Location</p>
-                    <p class="govuk-body-s">Give details of where your concept could be used.</p>
+                    <p class="govuk-body-s">Give details of where your innovation could be used.</p>
                     <p class="govuk-body-s">This could be:</p>
                     <ul class="govuk-body-s govuk-list govuk-list--bullet">
                       <li>locally</li>
@@ -235,12 +274,12 @@
                   <div class="govuk-accordion__section-header">
                     <h2 class="govuk-accordion__section-heading">
                       <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-4">
-                      Your concept's value to customers
+                      Your innovation's value to customers
                       </span>
                     </h2>
                   </div>
                   <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-                    <p class="govuk-body-s">Describe how your concept could benefit potential customers.</p>
+                    <p class="govuk-body-s">Describe how your innovation could benefit potential customers.</p>
                     <p class="govuk-body-s">This may include:</p>
                     <ul class="govuk-body-s govuk-list govuk-list--bullet">
                       <li>the particular problem it solves</li>
@@ -254,14 +293,14 @@
                   <div class="govuk-accordion__section-header">
                     <h2 class="govuk-accordion__section-heading">
                       <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-5">
-                      Other sectors you will target in the concept's first 3 years
+                      Other sectors you will target in the innovation's first 3 years
                       </span>
                     </h2>
                   </div>
                   <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-5">
                     <p class="govuk-body-s">Are there any other:</p>
                     <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                      <li>sectors which could use your concept?</li>
+                      <li>sectors which could use your innovation?</li>
                       <li> possible uses for it?</li>
                     </ul>
                   </div>
@@ -277,9 +316,10 @@
                     </h2>
                   </div>
                   <div id="accordion-default-content-6" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-6">
-                    <p class="govuk-body-s">List the organisations which offer products or services similar to your concept, which you know of.</p>
+                    <p class="govuk-body-s">List the organisations which offer products or services similar to your innovation, which you know of.</p>
                   </div>
                 </div>
+
 
 
               </div>
