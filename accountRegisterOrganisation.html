@@ -52,8 +52,13 @@
     </div>
     
     <div class="govuk-header__content">
-      <span class="govuk-header__link--service-name">
-       Apply for the Energy Entrepreneurs Fund: phase 9
+       <span class="govuk-header__link--service-name">
+        Apply for the Energy Entrepreneurs Fund: phase 9
+      </span>
+      <span class="govuk-header__link govuk-header__link--signout govuk-!-margin-top-1">
+        <a class="govuk-link govuk-link--inverse govuk-link--no-underline govuk-!-font-size-19" href="index.html">
+          Sign out
+        </a>
       </span>
     </div>
     
@@ -65,96 +70,61 @@
 <!-- main content component -->
 <div class="govuk-width-container">
 
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-quarters">
-    <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
-      <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="index.html">Apply for the Energy Entrepreneurs Fund: phase 9
-          </a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">
-          Register an account
-        </li>
-      </ol>
-    </nav>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+      <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="index.html">Apply for the Energy Entrepreneurs Fund: phase 9
+            </a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            Register an account
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="govuk-grid-column-one-quarter"></div>
   </div>
-  <div class="govuk-grid-column-one-quarter"></div>
-</div>
-
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-
-      <h1 class="govuk-heading-xl">Register an account</h1>
-      <p class="govuk-body-l">You'll need to register an account to start an application.</p>
-
-      <!-- <form action="" method="post" novalidate> -->
-
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="email">
-           Email address
-          </label>
-          <div id="event-name-hint" class="govuk-hint">
-            We need your email so we can sign you in
-          </div>
-          <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" aria-describedby="event-name-hint" autocomplete="email">
-        </div>
-
-        <div class="govuk-form-group govuk-!-margin-bottom-2">
-          <label class="govuk-label" for="password">
-            Create your password
-          </label>
-          <div id="create-password-hint" class="govuk-hint">
-            Your password must: 
-            <ul class="govuk-list govuk-list--bullet">
-              <li>be atleast 8 characters</li>
-              <li>be a mixture of upper and lower case</li>
-              <li>not include commonly used passwords</li>
-            </ul>
+      <div class="govuk-grid-column-two-thirds">
+        <!-- <form action="" method="post" novalidate> -->
+         
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--l" for="name">
+                What is your organisation’s name?
+              </label>
+            </h1>
+            <div id="org-name-hint" class="govuk-hint">
+              You can change this later
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="name" name="name" type="name" aria-describedby="org-name-hint">
           </div>
 
-          <div class="show-password__input-wrapper govuk-!-margin-bottom-6">
-            <input class="govuk-input govuk-input--width-20" id="password-create" name="password" type="password" aria-describedby="create-password-hint" spellcheck="false">
-            <button class="show-password__toggle" aria-controls="password-create" type="button" aria-label="Show password" id="buttonText" onclick="createPassword()">Show</button>
-            <span class="govuk-visually-hidden" aria-live="polite">Your password is hidden</span>
-          </div>
 
-        </div>
-
-
-
-        <div class="govuk-form-group govuk-!-margin-bottom-6">
+          <a href="accountRegisterPrivacy.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+            Continue
+            </button>
+          </a>
           
-          <label for="create-password" class="govuk-label"> Confirm your password</label>
-          <div class="show-password__input-wrapper">
-            <input class="govuk-input govuk-input--width-20" id="password-confirm" name="password-confirm" type="password" spellcheck="false">
-            <button class="show-password__toggle" aria-controls="password-confirm" type="button" aria-label="Show password" id="buttonText1" onclick="confirmPassword()">Show</button>
-            <span class="govuk-visually-hidden" aria-live="polite">Your password is hidden</span>
-          </div>
 
-        </div>
+        <!-- </form> -->
 
-        <p class="govuk-body-s">Review our <a class="govuk-link" href="#">privacy notice</a></p>
+      </div>
 
-        <a href="accountRegisterOrganisation.html">
-        <button class="govuk-button" data-module="govuk-button">
-          Continue
-        </button>
-      </a>
 
-      <!-- </form> -->
 
-      <p class="govuk-body-s"><a class="govuk-link" href="accountSignIn.html">Already have an account?</a></p>
-      <p class="govuk-body-s"><a class="govuk-link" href="#">Need help signing in or creating an account?</a></p>
+
 
     </div>
-
-  </div>
   </main>
+
+
 </div>
 <!-- end main content component -->
 
@@ -186,39 +156,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-
-
-function createPassword() {
-  var x = document.getElementById("password-create");
-  if (x.type === "password") {
-    x.type = "text";
-    document.getElementById("buttonText").innerHTML = "Hide"
-  } else {
-    x.type = "password";
-    document.getElementById("buttonText").innerHTML = "Show"
-  }
-}
-
-    function confirmPassword() {
-  var x = document.getElementById("password-confirm");
-  if (x.type === "password") {
-    x.type = "text";
-    document.getElementById("buttonText1").innerHTML = "Hide"
-  } else {
-    x.type = "password";
-    document.getElementById("buttonText1").innerHTML = "Show"
-  }
-}
-
-</script>
-
-
-
-
-
   </body>
 </html>
