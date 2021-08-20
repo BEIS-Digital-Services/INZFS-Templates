@@ -71,149 +71,96 @@
 <div class="govuk-width-container">
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
+    <div class="govuk-grid-column-three-quarters">
+      <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="index.html">Apply for the Energy Entrepreneurs Fund: phase 9
+            </a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            Register an account
+          </li>
+        </ol>
+      </nav>
     </div>
-        <div class="govuk-grid-column-one-quarter govuk-youraccount-right">  
-      <p><a class="govuk-body-m govuk-link" href="preferences/youraccount.html">Your account</a></p>
-    </div>
+    <div class="govuk-grid-column-one-quarter"></div>
   </div>
 
   <main class="govuk-main-wrapper " id="main-content" role="main">
-
     <div class="govuk-grid-row">
 
-        <div class="govuk-grid-column-two-thirds">
-            
+      <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
+         
+          <h1 class="govuk-heading-xl">Confirm your consent</h1>
 
-                <span class="govuk-caption-l">Step 1 of 3</span>
-                <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Turnover</h1>
+          <p class="govuk-body-l">You’ll need to confirm your consent to BEIS processing your personal information.</p>
 
-                <div class="govuk-form-group">
-                    <fieldset class="govuk-fieldset" aria-describedby="org-age-hint">
-                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                        <h2 class="govuk-fieldset__heading">
-                            Is your organisation more than 1 year old?
-                        </h2>
-                      </legend>
-                      <div id="org-age-hint" class="govuk-hint">
-                        If your organisation is less than one year old you don't have to enter any further information on this page.
-                      </div>
-                      <div class="govuk-radios">
-                        <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="org-age" name="org-age" type="radio" value="yes">
-                          <label class="govuk-label govuk-radios__label" for="org-age">
-                            Yes
-                          </label>
-                        </div>
-                        <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="org-age-2" name="org-age" type="radio" value="no">
-                          <label class="govuk-label govuk-radios__label" for="org-age-2">
-                            No
-                          </label>
-                        </div>
-                      </div>
-                  
-                    </fieldset>
-                  </div>
+          <p class="govuk-body">At the Department for Business, Energy and Industrial Strategy (BEIS) your privacy is important to us and we’re committed to protecting your personal data and to handling it responsibly. The UK General Data Protection Regulation (UK GDPR) gives individuals (whether these be customers, contractors or members of staff) more control over the ways in which businesses process your personal data and how you are contacted and we need your consent to how we contact you. </p>
+            
+          <p class="govuk-body">The main way we will contact you is via email, using the email address used to create your account. We will also contact you via text message if you have chosen that method for 2 factor authentication. 2 factor authentication is an extra layer of security used to make sure that people trying to gain access to their online account are who they say they are. </p>
+            
+          <p class="govuk-body">By signing this form you are confirming that you are freely consenting to the Department for Business, Energy & Industrial Strategy (BEIS) holding and processing your personal data for the following purpose of:</p> 
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Sending updates regarding the EEF: phase 9 funding round </li>
+            <li>Assess your application</li>
+          </ul>
 
 
-
-
-
-                <div class="govuk-form-group">
-                    <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="turnover">
-                        Most recent annual turnover
-                      </label>
-                    </h2>
-                    <div id="turnover-hint" class="govuk-hint">
-                        The amount of money your business has taken over a period of 12 months.
-                    </div>
-                    <div class="govuk-input__wrapper">
-                      <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                      <input class="govuk-input govuk-input--width-5" id="turnover" name="turnover" type="text"  aria-describedby="turnover-hint" spellcheck="false">
-                    </div>
-                  </div>
-
-
-
-                  <div class="govuk-form-group govuk-!-margin-bottom-3">
-                    <fieldset class="govuk-fieldset" role="group" aria-describedby="recent-turnover-hint">
-                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                        <h2 class="govuk-fieldset__heading">Most recent turnover date</h2>
-                      </legend>
-                      <div id="recent-turnover-hint" class="govuk-hint">
-                        For example 12 11 2022
-                      </div>
-                      <div class="govuk-date-input  govuk-!-margin-bottom-6" id="turnover-date">
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="turnover-date-day">
-                              Day
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="turnover-date-day" name="turnover-date-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="turnover-date-month">
-                              Month
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="turnover-date-month" name="turnover-date-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-                        </div>
-                        <div class="govuk-date-input__item">
-                          <div class="govuk-form-group">
-                            <label class="govuk-label govuk-date-input__label" for="turnover-date-year">
-                              Year
-                            </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="turnover-date-year" name="turnover-date-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
-                        </div>
-                      </div>
-
-                    </fieldset>
-                  </div>
-    
-
-
-
-
-                <div class="govuk-form-group">
-                    <div class="govuk-checkboxes">
-                        <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                        <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
-                            Mark this question as complete
-                        </label>
-                        </div>
-                    </div>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m govuk-visually-hidden">
+                <h2 class="govuk-fieldset__heading">
+                  Consent to personal information
+                </h2>
+              </legend>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="personal-info" name="personal-info" type="checkbox" value="">
+                  <label class="govuk-label govuk-checkboxes__label" for="personal-info">
+                    I consent to BEIS processing my personal information
+                  </label>
                 </div>
+              </div>
+          
+            </fieldset>
+          </div>
+
+        
+          <p class="govuk-body">You can find out more about how we use your data from our <a class="govuk-link" href="#">privacy notice</a> </p>
+          
+          <p class="govuk-body">You can withdraw or change your consent at any time by contacting <a class="govuk-link" href="mailto:entrepreneur@beis.gov.uk">entrepreneur@beis.gov.uk</a>. Please note that all processing of your personal data will cease once you have withdrawn consent, other than where this is required by law, but this will not affect any personal data that has already been processed prior to this point.</p>
+
+          <h2 class="govuk-heading-m">Contact details for further information</h2>
+
+          <p class="govuk-body govuk-!-padding-bottom-6">Georgina Hammond, <a class="govuk-link" href="mailto:entrepreneur@beis.gov.uk">entrepreneur@beis.gov.uk</a></p>
 
 
-                <a href="yourOrganisation-3.html">
-                  <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                  Save and continue to next step
-                  </button>
-                </a>
-
-                <p class="govuk-body-s"><a class="govuk-link govuk-!-font-weight-regular" href="yourOrganisation.html">Return to your organisation overview</a></p>
-    
-
-
+          <a href="accountVerify.html">
+            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+            Continue
+            </button>
+          </a>
+          
 
         <!-- </form> -->
 
-        </div>
+      </div>
+
+
+
 
 
     </div>
-
   </main>
 
 
 </div>
 <!-- end main content component -->
 
-<!-- turnover Footer component -->
+<!-- start Footer component -->
 <footer class="govuk-footer " role="contentinfo">
     <div class="govuk-width-container ">
       <div class="govuk-footer__meta">
