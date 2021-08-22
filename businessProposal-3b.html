@@ -81,7 +81,7 @@
             <a class="govuk-breadcrumbs__link" href="businessProposal.html">5. Business proposal</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            5.14. Project plan
+            5.6. Type of benefit
           </li>
         </ol>
       </nav>
@@ -95,7 +95,7 @@
 
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-three-quarters">
 
 <!--start: error message -->
 
@@ -114,170 +114,143 @@
 
 <!--end: error message -->
 
-
-       <!-- <form action="" method="post" novalidate> -->
+        <!-- <form action="" method="post" novalidate> -->
 
             <span class="govuk-caption-l">
-              Step 14 of 20
+              Step 6 of 20
             </span>
-              <div class="govuk-character-count" data-module="govuk-character-count" data-maxwords="1000">
-                
-                <div class="govuk-form-group">
-                  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="word-count">
-                      Project plan
-                    </label>
-                  </h1>
-
-                  <p class="govuk-body-s">Describe the practical steps and actions you will take to develop your innovation.</p>
-
-                  <p class="govuk-body-s">Make sure you include:</p>
-
-                  <ul class="govuk-list govuk-list--bullet govuk-!-font-size-16">
-                    <li>your technical approach, and why you're using it</li>
-                    <li>important milestones and when you expect to reach them</li>
-                    <li>what you need to reach these milestones</li>
-                    <li>other organisations you plan to work with</li>
-                    <li>the Technology Readiness Level (TRL) you expect to reach at the end of the project</li>
-                  </ul>
-
-                  <p class="govuk-body-s govuk-!-font-weight-bold">You must upload a document to support your response in <span class="govuk-colour--blueunderline">step 5.15.</span></p>
 
 
-                  <textarea class="govuk-textarea govuk-js-character-count show" id="word-count" name="word-count" rows="10" aria-describedby="word-count-info"></textarea>
 
-                </div>
-              
-                <div id="word-count-info" class="show govuk-hint govuk-character-count__message govuk-!-font-size-16" aria-live="polite">
-                  You have 1000 words remaining
-                </div>
-
-
-<!-- start: error message -->
-
-                <div class="govuk-character-count hide" style="display:none" data-module="govuk-character-count" data-maxwords="1000">
-                  <div class="govuk-form-group govuk-form-group--error">
-                    <span id="full-name-input-error" class="govuk-error-message">
-                      <span class="govuk-visually-hidden">Error:</span> You must enter some text before marking this step as complete
-                    </span>
-                    <textarea class="govuk-textarea govuk-js-character-count" id="word-count" name="word-count" rows="10" aria-describedby="word-count-info"></textarea>
-                    <div id="word-count-info" class="govuk-hint govuk-character-count__message govuk-!-font-size-16" aria-live="polite">
-                      You have 1000 words remaining
-                    </div>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="techbenefit-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
+                    <h1 class="govuk-fieldset__heading">
+                        Select what kind of benefit you expect your technology to create
+                    </h1>
+                  </legend>
+                  <div id="techbenefit-hint" class="govuk-hint">
+                    Select all that apply.
                   </div>
-                </div>
+                  <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="techbenefit" name="techbenefit" type="checkbox" value="export">
+                      <label class="govuk-label govuk-checkboxes__label" for="techbenefit">
+                        Cost of energy reduction
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="techbenefit-2" name="techbenefit" type="checkbox" value="ukbased">
+                      <label class="govuk-label govuk-checkboxes__label" for="techbenefit-2">
+                        Cost of process reduction
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="techbenefit-3" name="techbenefit" type="checkbox" value="finance">
+                      <label class="govuk-label govuk-checkboxes__label" for="techbenefit-3">
+                        Greenhouse gas reduction
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="techbenefit-4" name="techbenefit" type="checkbox" value="capital">
+                      <label class="govuk-label govuk-checkboxes__label" for="techbenefit-4">
+                        Energy efficiency
+                      </label>
+                    </div>
+  
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="techbenefit-5" name="techbenefit" type="checkbox" value="competition">
+                      <label class="govuk-label govuk-checkboxes__label" for="techbenefit-5">
+                        Conversion efficiency
+                      </label>
+                    </div>
+  
 
-<!-- end: error message -->
-
-
-
-                <div class="govuk-button--right">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                    Save progress
-                  </button>
-                </div>  
-
+  
+                  </div>
               
+                </fieldset>
               </div>
+  
 
 
 
 
-
-
-
-              <div class="govuk-accordion govuk-!-font-size-16" data-module="govuk-accordion" id="accordion-default">
-
+              <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
 
 
                 <div class="govuk-accordion__section ">
                   <div class="govuk-accordion__section-header">
                     <h2 class="govuk-accordion__section-heading">
                       <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-0">
-                        Assessment criteria
+                        Benefit type 1: cost of enery reduction
                       </span>
                     </h2>
                   </div>
                   <div id="accordion-default-content-0" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-0">
-                    <p class="govuk-body-s">Factors our assessors will consider include, but are not limited to:</p>
-                    <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                      <li>is your technical approach appropriate?</li>
-                      <li>have you planned your work and project milestones realistically?</li>
-                      <li>are your timeframe and costs realistic?</li>
-                      <li>do you have enough skills in place, and if not can you recruit them?</li>
-                      <li>will your project deliverables show progress and increased value?</li>
-                      <li>is the technology readiness level you’ve said you’ll reach at the end of the project realistic?</li>
-                    </ul>
+                    <p class="govuk-body-s">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
                   </div>
                 </div>
 
 
 
-                  <div class="govuk-accordion__section">
-                    <div class="govuk-accordion__section-header">
-                      <h2 class="govuk-accordion__section-heading">
-                        <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-1">
-                          Technical approach and milestones
-                        </span>
-                      </h2>
-                    </div>
-                    <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                      <p class="govuk-body-s">Details you could give include:</p>
-                      <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                        <li>alternative research and development (R&D) approaches and why your approach is better</li>
-                        <li>how important milestones depend on other factors in the project</li>
-                        <li>major achievements you expect to reach</li>
-                        <li>any points in the project where you will have to make go/no-go decisions</li>
-                      </ul>
-                    </div>
+
+                <div class="govuk-accordion__section ">
+                  <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                      <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-1">
+                        Benefit type 2: cost of process reduction
+                      </span>
+                    </h2>
                   </div>
+                  <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                        <p class="govuk-body-s">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                   </div>
+                </div>
 
 
-                  <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section ">
                     <div class="govuk-accordion__section-header">
                       <h2 class="govuk-accordion__section-heading">
                         <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-2">
-                          Other organisations you plan to work with
+                            Benefit type 3: greenhouse gas reduction
                         </span>
                       </h2>
                     </div>
                     <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-                      <p class="govuk-body-s">List other organisations you will work with to develop your innovation. </p>
-                      <p class="govuk-body-s"> This may include:</p>
-                      <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                        <li>collaborators</li>
-                        <li>customers</li>
-                        <li>suppliers </li>
-                        <li>subcontractors</li>
-                        <li>research organisations</li>
-                        <li>certifying bodies</li>
-                      </ul>
-                    </div>
+                          <p class="govuk-body-s">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                     </div>
                   </div>
+
 
 
                   <div class="govuk-accordion__section ">
                     <div class="govuk-accordion__section-header">
                       <h2 class="govuk-accordion__section-heading">
                         <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-3">
-                          Technology Readiness Level (TRL)
+                            Benefit type 4: energy efficiency
                         </span>
                       </h2>
                     </div>
                     <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                      <p class="govuk-body-s">You need to select the TRL you expect to reach at the end of the project.</p>
-                      <ul class="govuk-body-s govuk-list govuk-list--bullet">
-                        <li>TRL 1 – Basic research</li>
-                        <li>TRL 2 – Applied research</li>
-                        <li>TRL 3 – Proof of feasibility</li>
-                        <li>TRL 4 – Practical demonstrations</li>
-                        <li>TRL 5 – Technology proven in relevant environment</li>
-                        <li>TRL 6 – Demonstration prototype</li>
-                        <li>TRL 7 – Operational prototype</li>
-                        <li>TRL 8 – Production prototype</li>
-                        <li>TRL 9 – Marketable product</li>
-                      </ul>
-                      <p class="govuk-body-s">You can find more information on Technology Readiness Level in Appendix 2 of the guidance PDF.</p>
+                          <p class="govuk-body-s">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                     </div>
+                  </div>
+
+
+
+                  <div class="govuk-accordion__section ">
+                    <div class="govuk-accordion__section-header">
+                      <h2 class="govuk-accordion__section-heading">
+                        <span class="govuk-accordion__section-button govuk-!-font-size-19" id="accordion-default-heading-4">
+                            Benefit type 5: conversion efficiency
+                        </span>
+                      </h2>
                     </div>
+                    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                          <p class="govuk-body-s">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                     </div>
                   </div>
 
 
@@ -287,8 +260,7 @@
 
 
 
-             
-              
+
               <div class="govuk-form-group">
                 <div class="govuk-checkboxes">
                   <div class="govuk-checkboxes__item">
@@ -301,18 +273,18 @@
               </div>
 
 
-             <a href="businessProposal-8a.html">
-              <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                Save and continue to next step
-              </button>
+              <a href="businessProposal-3c.html">
+                <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+                  Save and continue to next step
+                </button>
               </a>
 
 
               <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
-      
+              
     
     
-          <!-- </form>   -->
+           <!-- </form> -->
       </div>
 
 
@@ -365,7 +337,6 @@
       window.GOVUKFrontend.initAll()
     </script>
 
-
 <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
 
 <script type="text/javascript">
@@ -395,8 +366,6 @@
 });
 
 </script>
-
-
 
   </body>
 </html>
