@@ -52,7 +52,7 @@
 /*Overview completed text*/
 .summary-list-section--right { text-align:right; float:right; color:#003078 }
 .govuk-colour--blue { color:#1D70B8; font-weight:bold }
-.govuk-colour--blueunderline { color:#1D70B8; font-weight:bold; text-decoration:underline; }
+.govuk-colour--blueunderline { color:#1D70B8; font-weight:bold; }
 
 /*Secondary button aligned right*/
 .govuk-button--right { text-align:right }
