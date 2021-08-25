@@ -32,7 +32,7 @@
 .file-upload--border { outline: 2px dashed #B1B4B6; padding: 5px 15px; transition: outline-offset .1s ease-in-out, background-color .1s linear; }
     .file-upload--border .govuk-summary-list { margin-bottom:0px }
     .file-upload--border .govuk-summary-list__actions, .file-upload--border .govuk-summary-list__key, .file-upload--border .govuk-summary-list__value { border-bottom:none }
-
+    .govuk-form-group--error .file-upload--border { outline: 2px dashed #d4351c;  }
 /*Colours*/
 .govuk-colour--mid-grey { color:#6f777b }
 
