@@ -123,51 +123,69 @@
 
 
           <div class="govuk-form-group">
-            <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
-            Upload a project cost breakdown
-            </label>
             <details class="govuk-details" data-module="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  What file can I upload?
-                </span>
-              </summary>
-              <div class="govuk-details__text">
-                <p class="govuk-body">You can only upload the following file types:</p>
-                <ul class="govuk-list govuk-list--bullet">
-                  <li>PDF, XLS, XLSX, PPT, PPTX, DOC, DOCX, GIF, JPEG, PNG</li>
-                </ul>
-              </div>
-            </details>
-            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file" aria-describedby="project-hint">
-        </div>
-
-
-          <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Uploaded file</h2>
-          <p class="govuk-body nofileupload">No file uploaded</p>
-
-          <!-- <dl class="govuk-summary-list">
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
-                uploaded file name
-              </dt>
-              <dd class="govuk-summary-list__value">
-               8mb
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Remove<span class="govuk-visually-hidden"> file uploaded</span>
-                </a>
-              </dd>
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What file can I upload?
+                  </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    <p class="govuk-body">You can only upload the following file types:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                      <li>PDF, XLS, XLSX, PPT, PPTX, DOC, DOCX, GIF, JPEG, PNG</li>
+                    </ul>
+                  </div>
+                </details>
             </div>
-          </dl> -->
 
-          
-          <!-- Upload button for javascript disabled  -->
-          <!--
-          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Upload file
-          </button> -->
+
+
+            <div class="govuk-grid-row govuk-!-margin-bottom-3">
+              <label class="govuk-label govuk-!-font-weight-bold govuk-visually-hidden" for="file-upload-1">
+                  Upload a Letter of support
+                  </label>
+                <div class="govuk-grid-column-three-quarters govuk-!-margin-bottom-3">
+                  <div class="file-upload--border">
+                    <input class="govuk-file-upload govuk-!-font-size-16" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+                </div>
+  
+                <div class="govuk-grid-column-one-quarter">
+                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                    Upload
+                  </button>
+                </div> 
+  
+  
+                <!--
+                <div class="govuk-grid-column-three-quarters govuk-!-margin-bottom-6">
+                  <div class="file-upload--border">
+                    <h2 class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0 govuk-!-font-size-16">Uploaded file</h2>
+                    <p class="govuk-body nofileupload govuk-!-font-size-16">No file uploaded</p>
+                  </div>
+                </div>
+                -->
+  
+  
+                
+                <div class="govuk-grid-column-three-quarters govuk-!-margin-bottom-6">
+                  <div class="file-upload--border">
+                    <dl class="govuk-summary-list">
+                      <div class="govuk-summary-list__row govuk-!-font-size-16">
+                        <dd class="govuk-summary-list__value">
+                          Uploaded file name <span class="govuk-!-margin-left-6">8mb</span>
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Remove<span class="govuk-visually-hidden"> file uploaded</span>
+                          </a>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+  
+              </div>
 
 
             <table class="govuk-table">
