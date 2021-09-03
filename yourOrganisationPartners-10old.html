@@ -72,70 +72,81 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-three-quarters"> 
-      <a href="#"  onclick="history.back(-1)" class="govuk-back-link">Back</a>
+      <nav aria-label="breadcrumb" class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="applicationOverview.html">Application overview</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="yourOrganisationPartners.html">3. About your organisation (and partners)</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">
+            3.10. Consortium applicants
+          </li>
+        </ol>
+      </nav>
     </div>
-    <div class="govuk-grid-column-one-quarter govuk-youraccount-right">  
+        <div class="govuk-grid-column-one-quarter govuk-youraccount-right">  
       <p><a class="govuk-body-m govuk-link" href="preferences/youraccount.html">Your account</a></p>
     </div>
   </div>
 
+
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
-
     <div class="govuk-grid-row">
-
       <div class="govuk-grid-column-two-thirds">
 
 
-        <!-- <form action="" method="post" novalidate> -->
-
+       <!-- <form action="" method="post" novalidate>  -->
+                
+         
             <div class="govuk-form-group">
-              <fieldset class="govuk-fieldset">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
-                    <h1 class="govuk-fieldset__heading">
-                      Do you have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more?
-                    </h1>
-                  </legend>
-                <div class="govuk-radios">
+              <fieldset class="govuk-fieldset" aria-describedby="sole-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    Are you the sole applicant?
+                 </h1>
+                </legend>
+                <div id="sole-hint" class="govuk-hint">
+                  Answer 'no' if you are applying as part of a consortium of companies.
+                </div>
+                <div class="govuk-radios govuk-radios--inline">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="health-1" name="health" type="radio" value="health-1">
-                    <label class="govuk-label govuk-radios__label" for="health-1">
+                    <input class="govuk-radios__input" id="sole" name="sole" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="sole">
                       Yes
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="health-2" name="health" type="radio" value="health-2">
-                    <label class="govuk-label govuk-radios__label" for="health-2">
-                       No
+                    <input class="govuk-radios__input" id="sole-2" name="sole" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="sole-2">
+                      No
                     </label>
                   </div>
-                  <div class="govuk-radios__divider">or</div>
-                  <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="health-6" name="health" type="radio" value="health-6">
-                    <label class="govuk-label govuk-radios__label" for="health-6">
-                      Prefer not to say
-                    </label>
-                  </div>
-
                 </div>
             
               </fieldset>
-            </div>  
-
- 
-
-            <a href="equalityWhite-3.html">
-            <button class="govuk-button" data-module="govuk-button">
-              Continue
-            </button></a>
+            </div>
 
 
-<!-- 
-        </form> -->
+              <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+                Save and continue
+              </button>
 
+              <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
+
+
+        <!-- </form>  -->
       </div>
 
+
+
+      <div class="govuk-grid-column-one-third">
+
+  
+      </div>
 
 
 
@@ -198,5 +209,28 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+
+    $( document ).ready(function() {
+
+$('.govuk-button').click(function (e) {
+
+    if ($('#sole').is(':checked')) {
+      window.location.href = 'yourOrganisationPartners.html';
+    }
+    else if ($('#sole-2').is(':checked')) {
+      window.location.href = 'yourOrganisationPartners-10a.html';
+    }
+
+});
+
+});
+    
+    
+    </script>
+
   </body>
 </html>
