@@ -78,10 +78,10 @@
             <a class="govuk-breadcrumbs__link" href="applicationOverview.html">Application overview</a>
           </li>
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="summaryFinances.html">2. Summary of finances</a>
+            <a class="govuk-breadcrumbs__link" href="yourOrganisationPartners.html">3. About your organisation (and partners)</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            2.3. VAT registration
+            3.10. Consortium applicants
           </li>
         </ol>
       </nav>
@@ -91,82 +91,74 @@
     </div>
   </div>
 
+
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
+
     <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-        <div class="govuk-grid-column-two-thirds">
-            
-        <!-- <form action="" method="post" novalidate> -->
 
-          <span class="govuk-caption-l">Step 3 of 5</span>
-            
-            <div class="govuk-form-group">
-
-                <fieldset class="govuk-fieldset">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
-                        <h1 class="govuk-fieldset__heading">
-                            Is your organisation VAT registered?
-                        </h1>
-                    </legend>
-
-                    <div class="govuk-radios govuk-radios--inline">
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="vat-1" name="vat" type="radio" value="yes">
-                            <label class="govuk-label govuk-radios__label" for="vat-1">
-                            Yes
-                            </label>
-                        </div>
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="vat-2" name="vat" type="radio" value="no">
-                            <label class="govuk-label govuk-radios__label" for="vat-2">
-                            No
-                            </label>
-                        </div>
-                    </div>
+       <!-- <form action="" method="post" novalidate>  -->
                 
-                </fieldset>
+         
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="sole-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <h1 class="govuk-fieldset__heading">
+                    Are you the sole applicant?
+                 </h1>
+                </legend>
+                <div id="sole-hint" class="govuk-hint">
+                  Answer 'no' if you are applying as part of a consortium of companies.
+                </div>
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sole" name="sole" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="sole">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="sole-2" name="sole" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="sole-2">
+                      No
+                    </label>
+                  </div>
+                </div>
+            
+              </fieldset>
             </div>
 
 
+              <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+                Save and continue
+              </button>
 
-                <div class="govuk-form-group">
-                    <div class="govuk-checkboxes">
-                        <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                        <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
-                            Mark this step as complete
-                        </label>
-                        </div>
-                    </div>
-                </div>
+              <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
 
 
-                <a href="summaryFinances-4a.html">
-                  <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                  Save and continue to next step
-                  </button>
-                </a>
-
-                <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
-    
+        <!-- </form>  -->
+      </div>
 
 
 
-        <!-- </form> -->
+      <div class="govuk-grid-column-one-third">
 
-        </div>
+  
+      </div>
+
+
 
 
     </div>
-
   </main>
 
 
 </div>
 <!-- end main content component -->
 
-<!-- balance-sheet Footer component -->
+<!-- start Footer component -->
 <footer class="govuk-footer " role="contentinfo">
   <div class="govuk-width-container ">
     <div class="govuk-footer__meta">
@@ -217,5 +209,28 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+
+    $( document ).ready(function() {
+
+$('.govuk-button').click(function (e) {
+
+    if ($('#sole').is(':checked')) {
+      window.location.href = 'yourOrganisationPartners.html';
+    }
+    else if ($('#sole-2').is(':checked')) {
+      window.location.href = 'yourOrganisationPartners-10a.html';
+    }
+
+});
+
+});
+    
+    
+    </script>
+
   </body>
 </html>
