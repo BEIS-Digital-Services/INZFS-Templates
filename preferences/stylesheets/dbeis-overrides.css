@@ -51,6 +51,7 @@
 
 /*Overview completed text*/
 .summary-list-section--right { text-align:right; float:right; color:#003078 }
+.govuk-summary-list__key--full { width:max-content }
 .govuk-colour--blue { color:#1D70B8; font-weight:bold }
 .govuk-colour--blueunderline { color:#1D70B8; font-weight:bold; }
 
