@@ -81,7 +81,7 @@
             <a class="govuk-breadcrumbs__link" href="yourOrganisationPartners.html">3. About your organisation (and partners)</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            3.11. Parent organisation
+            3.17. Parent organisation maturity
           </li>
         </ol>
       </nav>
@@ -97,33 +97,50 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
 
-          
           <div class="govuk-form-group">
-
-            <fieldset class="govuk-fieldset" role="group">
+            <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
                 <h1 class="govuk-fieldset__heading">
-                    Do you have a parent organisation?
+                  How old is your parent organisation?
                 </h1>
               </legend>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org" name="parent-org" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="parent-org">
-                    Yes, continue to complete parent organisation details
+                  <input class="govuk-radios__input" id="org-age-1" name="org-age" type="radio" value="org-age-1">
+                  <label class="govuk-label govuk-radios__label" for="org-age-1">
+                    Pre-start-up
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org-2" name="parent-org" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="parent-org-2">
-                    No, return to the 'about your organisation' overview
+                  <input class="govuk-radios__input" id="org-age-2" name="org-age" type="radio" value="org-age-2">
+                  <label class="govuk-label govuk-radios__label" for="org-age-2">
+                    Start-up (less than 1 year)
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="org-age-3" name="org-age" type="radio" value="org-age-3">
+                  <label class="govuk-label govuk-radios__label" for="org-age-3">
+                    1 to 5 years
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="org-age-4" name="org-age" type="radio" value="org-age-4">
+                  <label class="govuk-label govuk-radios__label" for="org-age-4">
+                    6 to 10 years
+                  </label>
+                </div>             
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="org-age-5" name="org-age" type="radio" value="org-age-5">
+                    <label class="govuk-label govuk-radios__label" for="org-age-5">
+                        11 years or over
+                    </label>
+                  </div>   
+
+
               </div>
           
             </fieldset>
-
-        </div>
+          </div>  
 
 
 
@@ -140,14 +157,14 @@
             </div>
 
 
+            <a href="yourOrganisationPartners-18.html">
+              <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+              Save and continue to next step
+              </button>
+            </a>
+  
+            <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
 
-            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-            Save and continue
-            </button>
-
-          <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
-
-        
 
 
         <!-- </form> -->
@@ -216,31 +233,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-   <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
-
-   <script type="text/javascript">
-
-
-   $( document ).ready(function() {
-
-$('.govuk-button').click(function (e) {
-
-   if ($('#parent-org').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners-12.html';
-   }
-   else if ($('#parent-org-2').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners.html';
-   }
-
-});
-
-});
-   
-   
-   </script>
-
-
-
-
   </body>
 </html>

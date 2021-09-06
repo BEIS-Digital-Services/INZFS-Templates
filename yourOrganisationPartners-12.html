@@ -8,11 +8,11 @@
   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-    <link rel="shortcut icon" org-ages="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="mask-icon" href="assets/images/govuk-mask-icon.svg" color="#0b0c0c">
-    <link rel="apple-touch-icon" org-ages="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" org-ages="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" org-ages="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" href="assets/images/govuk-apple-touch-icon.png">
   
     <!--[if !IE 8]><!-->
@@ -81,7 +81,7 @@
             <a class="govuk-breadcrumbs__link" href="yourOrganisationPartners.html">3. About your organisation (and partners)</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            3.11. Parent organisation
+            3.12. Parent organisation name
           </li>
         </ol>
       </nav>
@@ -98,57 +98,45 @@
         <!-- <form action="" method="post" novalidate> -->
 
           
+         
+          <h1 class="govuk-heading-l">What is your parent organisation’s name?</h1>
+
           <div class="govuk-form-group">
 
-            <fieldset class="govuk-fieldset" role="group">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
-                <h1 class="govuk-fieldset__heading">
-                    Do you have a parent organisation?
-                </h1>
-              </legend>
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org" name="parent-org" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="parent-org">
-                    Yes, continue to complete parent organisation details
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org-2" name="parent-org" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="parent-org-2">
-                    No, return to the 'about your organisation' overview
-                  </label>
-                </div>
-              </div>
-          
-            </fieldset>
 
-        </div>
-
-
-
+            <label class="govuk-label govuk-label" for="name">
+             Name
+            </label>
 
             <div class="govuk-form-group">
-                <div class="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-org-age-19" for="complete">
-                        Mark this step as complete
-                    </label>
-                    </div>
-                </div>
+              <input class="govuk-input govuk-input--width-20" id="name" name="name" type="name" spellcheck="false" autocomplete="name">
             </div>
 
 
+            <div class="govuk-form-group">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
+                    Mark this step as complete
+                </label>
+                </div>
+            </div>
+            </div>
 
+          </div>
+
+
+
+          <a href="yourOrganisationPartners-13.html">
             <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-            Save and continue
+            Save and continue to next step
             </button>
+          </a>
 
           <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
-
-        
-
+         
+          
 
         <!-- </form> -->
 
@@ -216,31 +204,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-   <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
-
-   <script type="text/javascript">
-
-
-   $( document ).ready(function() {
-
-$('.govuk-button').click(function (e) {
-
-   if ($('#parent-org').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners-12.html';
-   }
-   else if ($('#parent-org-2').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners.html';
-   }
-
-});
-
-});
-   
-   
-   </script>
-
-
-
-
   </body>
 </html>

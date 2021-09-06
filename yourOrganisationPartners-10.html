@@ -99,12 +99,16 @@
 
         <!-- <form action="" method="post" novalidate> -->
 
-            <span class="govuk-caption-l">Step 10 of 11 </span>
-
+           
               <h1 class="govuk-heading-l">Consortium applicant details</h1>
-              <p class="govuk-body">If you are applying with other businesses as part of a consortium group then you will need to supply us with a document that shows all companies involved.</p>
+              <p class="govuk-body">If you are applying as part of a consortium you will need to upload a document listing all its members.</p>
 
-              <p class="govuk-body">You can download a <a href="#" class="govuk-link govuk-!-font-weight-regular">spreadsheet consortium template</a> to list out all of the companies that will be involved in this application.</p>
+
+              <div class="govuk-inset-text">
+                If you are applying as a sole applicant then you will not be part of a consortium and this step will not apply to you. Please select not applicable.
+              </div>
+
+              <p class="govuk-body">You can download a <a href="#" class="govuk-link govuk-!-font-weight-regular">consortium form</a> to list all the partners who will be involved in your project.</p>
 
 
 
@@ -215,29 +219,15 @@
 
 
             <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-visually-hidden">
-                    <h1 class="govuk-fieldset__heading">
-                      Mark the step as complete or not applicable
-                    </h1>
-                  </legend>
-                  <div class="govuk-radios govuk-!-margin-bottom-3">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="markquestion" name="markquestion" type="radio" value="england">
-                      <label class="govuk-label govuk-radios__label" for="markquestion">
-                        Mark this step as complete
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="markquestion-2" name="markquestion" type="radio" value="scotland">
-                      <label class="govuk-label govuk-radios__label" for="markquestion-2">
-                        Not applicable
-                      </label>
-                    </div>
+              <div class="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                  <label class="govuk-label govuk-checkboxes__label govuk-!-font-org-age-19" for="complete">
+                      Mark this step as complete
+                  </label>
                   </div>
-              
-                </fieldset>
               </div>
+            </div>
 
 
 
