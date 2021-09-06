@@ -8,11 +8,11 @@
   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-    <link rel="shortcut icon" org-ages="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="mask-icon" href="assets/images/govuk-mask-icon.svg" color="#0b0c0c">
-    <link rel="apple-touch-icon" org-ages="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" org-ages="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" org-ages="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/govuk-apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" href="assets/images/govuk-apple-touch-icon.png">
   
     <!--[if !IE 8]><!-->
@@ -81,10 +81,10 @@
             <a class="govuk-breadcrumbs__link" href="yourOrganisationPartners.html">3. About your organisation (and partners)</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            3.11. Parent organisation
+            3.7. Parent organisation size
           </li>
         </ol>
-      </nav>
+      </nav>    
     </div>
     <div class="govuk-grid-column-one-quarter govuk-youraccount-right">  
       <p><a class="govuk-body-m govuk-link" href="preferences/youraccount.html">Your account</a></p>
@@ -97,33 +97,48 @@
       <div class="govuk-grid-column-two-thirds">
         <!-- <form action="" method="post" novalidate> -->
 
-          
+         
           <div class="govuk-form-group">
-
-            <fieldset class="govuk-fieldset" role="group">
+            <fieldset class="govuk-fieldset" aria-describedby="org-size-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-!-margin-bottom-6">
                 <h1 class="govuk-fieldset__heading">
-                    Do you have a parent organisation?
+                  How many full-time employees does your parent organisation currently have?
                 </h1>
               </legend>
+              <div id="org-size-hint" class="govuk-hint">
+                This number includes directors.
+              </div>
               <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org" name="parent-org" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="parent-org">
-                    Yes, continue to complete parent organisation details
+                  <input class="govuk-radios__input" id="size-1" name="size" type="radio" value="size-1">
+                  <label class="govuk-label govuk-radios__label" for="size-1">
+                    10 or less (micro enterprise)
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="parent-org-2" name="parent-org" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="parent-org-2">
-                    No, return to the 'about your organisation' overview
+                  <input class="govuk-radios__input" id="size-2" name="size" type="radio" value="size-2">
+                  <label class="govuk-label govuk-radios__label" for="size-2">
+                    11 to 50 (small enterprise)
                   </label>
                 </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="size-3" name="size" type="radio" value="size-3">
+                  <label class="govuk-label govuk-radios__label" for="size-3">
+                    51 to 250 (medium enterprise)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="size-4" name="size" type="radio" value="size-4">
+                  <label class="govuk-label govuk-radios__label" for="size-4">
+                    251 or more (large enterprise)
+                  </label>
+                </div>
+                
+
               </div>
           
             </fieldset>
-
-        </div>
+          </div>  
 
 
 
@@ -132,7 +147,7 @@
                 <div class="govuk-checkboxes">
                     <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-org-age-19" for="complete">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
                         Mark this step as complete
                     </label>
                     </div>
@@ -140,14 +155,14 @@
             </div>
 
 
+            <a href="yourOrganisationPartners-17.html">
+              <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
+              Save and continue to next step
+              </button>
+            </a>
+  
+            <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
 
-            <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-            Save and continue
-            </button>
-
-          <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
-
-        
 
 
         <!-- </form> -->
@@ -216,31 +231,5 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
-   <script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
-
-   <script type="text/javascript">
-
-
-   $( document ).ready(function() {
-
-$('.govuk-button').click(function (e) {
-
-   if ($('#parent-org').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners-12.html';
-   }
-   else if ($('#parent-org-2').is(':checked')) {
-     window.location.href = 'yourOrganisationPartners.html';
-   }
-
-});
-
-});
-   
-   
-   </script>
-
-
-
-
   </body>
 </html>
