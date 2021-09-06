@@ -81,7 +81,7 @@
             <a class="govuk-breadcrumbs__link" href="summaryFinances.html">2. Summary of finances</a>
           </li>
           <li class="govuk-breadcrumbs__list-item" aria-current="page">
-            2.4. Most recent annual turnover
+            2.4. Turnover
           </li>
         </ol>
       </nav>
@@ -99,14 +99,18 @@
             
         <!-- <form action="" method="post" novalidate> -->
 
-          <span class="govuk-caption-l">Step 4 of 5</span>
-            
-
+          
               <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="turnover">
                     Most recent annual turnover
                   </label>
                 </h1>
+
+                <div class="govuk-inset-text">
+                  If your organisation less than 12 months old, you do not need to complete this step. Mark this step as 'not applicable'.
+                </div>
+
+
                 <div id="turnover-hint" class="govuk-hint">
                     The amount of money your business has taken over a period of 12 months.
                 </div>
@@ -117,16 +121,30 @@
               </div>
               
 
-                <div class="govuk-form-group">
-                    <div class="govuk-checkboxes">
-                        <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
-                        <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
-                            Mark this step as complete
-                        </label>
-                        </div>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-visually-hidden">
+                    <h1 class="govuk-fieldset__heading">
+                      Mark the step as complete or not applicable
+                    </h1>
+                  </legend>
+                  <div class="govuk-radios govuk-!-margin-bottom-3">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="markquestion" name="markquestion" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="markquestion">
+                        Mark this step as complete
+                      </label>
                     </div>
-                </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="markquestion-2" name="markquestion" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="markquestion-2">
+                        Not applicable
+                      </label>
+                    </div>
+                  </div>
+              
+                </fieldset>
+              </div>
 
 
                 <a href="summaryFinances-4b.html">
