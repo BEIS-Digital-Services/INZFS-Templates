@@ -34,6 +34,7 @@
     .file-upload--border .govuk-summary-list__actions, .file-upload--border .govuk-summary-list__key, .file-upload--border .govuk-summary-list__value { border-bottom:none }
     .govuk-form-group--error .file-upload--border { outline: 2px dashed #d4351c;  }
 /*Colours*/
+.govuk-colour--list-grey { color:#505a5f }
 .govuk-colour--mid-grey { color:#6f777b }
 
 /*Breadcrumbs*/
