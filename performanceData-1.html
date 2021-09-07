@@ -106,7 +106,7 @@
                     Which of the following descriptions fits your project best?
                   </h1>
                 </legend>
-                <div class="govuk-radios">
+                <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="prod-dev" name="dev" type="radio" value="prod-dev">
                     <label class="govuk-label govuk-radios__label" for="prod-dev">
@@ -137,11 +137,20 @@
                       Process development
                     </label>
                   </div>
+
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="other-dev" name="dev" type="radio" value="other-dev">
+                    <input class="govuk-radios__input" id="other-dev" name="dev" type="radio" value="other-dev" data-aria-controls="other-org">
                     <label class="govuk-label govuk-radios__label" for="other-dev">
                       Other
                     </label>
+                  </div>
+
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="other-org">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="other-details">
+                        If 'Other' give details
+                      </label>
+                      <input class="govuk-input govuk-input--width-20" id="other-details" name="dev" type="other-details" spellcheck="false" autocomplete="other"></div>
                   </div>
 
                 </div>
@@ -149,14 +158,6 @@
               </fieldset>
             </div>
 
-
-            <div class="govuk-form-group">
-              <label class="govuk-label" for="width-20">
-                If 'Other' give details
-              </label>
-              <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-            </div>  
-            
             
             <div class="govuk-inset-text">
               The performance data submitted in this questionnaire is not assessed. It helps the team understand each project better and improve the application process for future funding rounds.
