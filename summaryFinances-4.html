@@ -141,11 +141,9 @@
                 </div>
 
 
-                <a href="summaryFinances-4a.html">
                   <button class="govuk-button govuk-!-margin-bottom-3" data-module="govuk-button">
-                    Save and continue to next step
+                    Save and continue
                   </button>
-                </a>
                 
                 <p class="govuk-body-s"><a href="#" onclick="history.back(-1)" class="govuk-link govuk-!-font-weight-regular">Back to previous step</a></p>
                
@@ -216,5 +214,27 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        $('.govuk-button').click(function (e) {
+
+                      if ($('#organisationage-1').is(':checked')) {
+                        window.location.href = 'summaryFinances-4a.html';
+                      }
+                      else if ($('#organisationage-2').is(':checked')) {
+                        window.location.href = 'summaryFinances.html';
+                      }
+
+                  });
+
+                });
+    </script>
+
+
   </body>
 </html>
