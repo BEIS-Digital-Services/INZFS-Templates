@@ -216,7 +216,7 @@
             </div>
 
 
-            <div class="govuk-form-group">
+            <div class="govuk-form-group hide-input">
               <label class="govuk-label" for="width-20">
                 If 'Other' give details
               </label>
@@ -316,5 +316,26 @@
     <script>
       window.GOVUKFrontend.initAll()
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        $(".hide-input").hide();
+        $("#market-14").click(function() {
+            if($(this).is(":checked")) {
+                $(".hide-input").show();
+            } else {
+                $(".hide-input").hide();
+            }
+        });
+
+       });
+
+    </script>
+
+
   </body>
 </html>
