@@ -52,9 +52,21 @@
 
 /*Overview completed text*/
 .summary-list-section--right { text-align:right; float:right; color:#003078 }
-.govuk-summary-list__key--full { width:max-content }
 .govuk-colour--blue { color:#1D70B8; font-weight:bold }
 .govuk-colour--blueunderline { color:#1D70B8; font-weight:bold; }
+.govuk-error-message .govuk-summary-list__actions, .govuk-error-message .govuk-summary-list__key, 
+.govuk-error-message .govuk-summary-list__value { border-bottom:none }
+
+@media (min-width: 40.0625em) {
+    .govuk-summary-list__row.govuk-error-message .govuk-summary-list__actions, .govuk-summary-list__row.govuk-error-message .govuk-summary-list__value { display:none}
+    .govuk-summary-list__row.govuk-error-message .govuk-summary-list__key { width: 90% !important; display:block; margin-bottom:none !important }
+}
+
+@media (max-width: 40.0625em) {
+    .govuk-summary-list__row.govuk-error-message {
+        border-bottom:none;
+    }
+}
 
 /*Secondary button aligned right*/
 .govuk-button--right { text-align:right }
