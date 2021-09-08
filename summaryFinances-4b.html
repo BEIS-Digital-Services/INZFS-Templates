@@ -106,10 +106,6 @@
                     <h1 class="govuk-fieldset__heading">Most recent turnover date</h1>
                   </legend>
 
-                  <div class="govuk-inset-text">
-                    If your organisation less than 12 months old, you do not need to complete this step. Mark this step as 'not applicable'.
-                  </div>
-
                   <div id="recent-turnover-hint" class="govuk-hint">
                     For example 12 11 2022
                   </div>
@@ -142,29 +138,15 @@
               
 
               <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-visually-hidden">
-                    <h1 class="govuk-fieldset__heading">
-                      Mark the step as complete or not applicable
-                    </h1>
-                  </legend>
-                  <div class="govuk-radios govuk-!-margin-bottom-3">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="markquestion" name="markquestion" type="radio" value="england">
-                      <label class="govuk-label govuk-radios__label" for="markquestion">
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="complete" name="complete" type="checkbox" value="complete">
+                    <label class="govuk-label govuk-checkboxes__label govuk-!-font-size-19" for="complete">
                         Mark this step as complete
-                      </label>
+                    </label>
                     </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="markquestion-2" name="markquestion" type="radio" value="scotland">
-                      <label class="govuk-label govuk-radios__label" for="markquestion-2">
-                        Not applicable
-                      </label>
-                    </div>
-                  </div>
-              
-                </fieldset>
-              </div>
+                </div>
+            </div>
 
 
                 <a href="summaryFinances.html">
