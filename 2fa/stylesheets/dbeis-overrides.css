@@ -23,6 +23,9 @@
 /*Tags*/
 .govuk-tag { text-transform: initial; }
 
+/*Validation*/
+.field-validation-valid { display:none; }
+
 /*Button group full width where link is outside button element*/
 @media (max-width: 40.05em) {
     .govuk-button-group a { display:inline-block; width:100% }
