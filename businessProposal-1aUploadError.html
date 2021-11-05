@@ -96,6 +96,20 @@
   <main class="govuk-main-wrapper " id="main-content" role="main">
 
 
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There is a problem
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#file-upload">This section has a mandatory file upload. You must first choose your file and then upload it using the upload button below.</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
@@ -132,8 +146,12 @@
               <label class="govuk-label govuk-!-font-weight-bold govuk-!-margin-bottom-3 govuk-visually-hidden" for="file-upload-1">
                 Upload a file
                 </label>
-
               <div class="govuk-grid-column-full govuk-!-margin-bottom-3">
+
+                <span id="file-upload" class=" govuk-form-group--error govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> This section has a mandatory file upload. You must first choose your file and then upload it using the upload button below.
+                </span>
+
                 <div class="file-upload--border">
                   <input class="govuk-file-upload govuk-!-font-size-16" id="file-upload-1" name="file-upload-1" type="file">
                 </div>
