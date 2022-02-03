@@ -1,0 +1,6 @@
+---
+applications:
+- name: RerouteTest
+  memory: 64M
+  buildpacks:
+  - staticfile_buildpack
